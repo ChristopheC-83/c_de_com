@@ -1,0 +1,52 @@
+.constainer {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: clamp(32px, 24px + 2.2vw, 60px);
+  letter-spacing: calc(1px + 0.12vw);
+  font-weight: bold;
+}
+
+h2 {
+  font-size: clamp(23px, 20px + 1.65vw, 40px);
+  letter-spacing: calc(1px + 0.04vw);
+}
+
+h3 {
+  font-size: clamp(20px, 20px + 1vw, 29px);
+  letter-spacing: calc(1px + 0.02vw);
+}
+
+h4 {
+  font-size: clamp(18px, 14px + 0.7vw, 22px);
+  letter-spacing: calc(1px + 0.01vw);
+}
+
+h5 {
+  font-size: clamp(16px, 12px + 0.4vw, 18px);
+  letter-spacing: calc(0.8px + 0.01vw);
+}
+
+p {
+  font-size: clamp(14px, 12px + 0.4vw, 20px);
+  line-height: clamp(30px, 24px + 0.66vw, 36px);
+}
+
+h1,
+h2,
+h3,
+h4,
+h4,
+h5 {
+  font-weight: bold;
+}
+
+.text-clip {
+  width: fit-content;
+  background: linear-gradient(45deg, #f09104 0%, #e418eb 100%);
+  background-clip: text;
+  color: transparent;
+}/*# sourceMappingURL=style.css.map */
