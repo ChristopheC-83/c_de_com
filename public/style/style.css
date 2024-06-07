@@ -1,7 +1,11 @@
-.constainer {
+.container {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.bg-clip {
+  background: linear-gradient(45deg, #f09104 0%, #e418eb 100%);
 }
 
 h1 {
