@@ -11,9 +11,9 @@ export default function EarthComponent() {
           </div>
         </div>
         <div className="z-20 flex flex-col justify-center basis-3/5">
-          <div className="flex-col p-10 text-white rounded-full flexMid w-fit bg-clip box-shadow">
+          <div className="flex-col px-10 py-6 text-white rounded-full flexMid w-fit bg-clip box-shadow">
               <h1 className="w-fit">Votre Site Internet</h1>
-              <h3 className="w-fit">Votre espace de communication</h3>
+              <h3 className="mb-2 w-fit">Votre espace de communication</h3>
           </div>
         </div>
       </div>
