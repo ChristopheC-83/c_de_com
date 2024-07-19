@@ -1,13 +1,12 @@
 
-import { HeaderEarth } from "@/components/commons/HeaderEarth";
-import OnlyEarth from "@/components/commons/OnlyEarth";
-import Image from "next/image";
+
+import HomePage from "./(pages)/home/page";
 
 
 export default function Home() {
   return (
    <main className="w-full">
-    <OnlyEarth/>
+    <HomePage/>
    </main>
   );
 }

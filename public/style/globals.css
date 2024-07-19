@@ -16,9 +16,7 @@
 
 
   
-  .container {
-    @apply w-full px-1 mx-auto xs:px-2 sm:px-3 md:px-4 lg:px-5 max-w-[1000px];
-  }
+  
   
   html {
     scroll-behavior: smooth;
