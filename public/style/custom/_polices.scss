@@ -1,41 +1,44 @@
 h1 {
-  font-size: clamp(32px, calc(24px + 2.2vw), 60px);
-  letter-spacing: calc(1px + 0.12vw);
+  font-size: clamp(32px, calc(22px + 2.2vw), 60px);
+  letter-spacing: calc(1px + 0.10vw);
   font-weight: bold;
+  font-family: "Labrada";
 }
 h2 {
-  font-size: clamp(23px, calc(20px + 1.65vw), 40px);
-  letter-spacing: calc(1px + 0.04vw);
+  font-size: clamp(23px, calc(18px + 1.65vw), 40px);
+  letter-spacing: calc(1px + 0.035vw);
+  font-weight: bold;
+  font-family: "Labrada";
+  margin: 0 auto;
 }
 h3 {
-  font-size: clamp(20px, calc(20px + 1vw), 29px);
-  letter-spacing: calc(1px + 0.02vw);
+  font-size: clamp(20px, calc(18px + 1vw), 29px);
+  letter-spacing: calc(1px + 0.018vw);
+  font-weight: bold;
+  font-family: "Labrada";
 }
 h4 {
-  font-size: clamp(18px, calc(14px + 0.7vw), 22px);
-  letter-spacing: calc(1px + 0.01vw);
+  font-size: clamp(18px, calc(13px + 0.7vw), 22px);
+  letter-spacing: calc(1px + 0.008vw);
+  font-weight: bold;
+  font-family: "Labrada";
 }
 h5 {
-  font-size: clamp(16px, calc(12px + 0.4vw), 18px);
-  letter-spacing: calc(0.8px + 0.01vw);
+  font-size: clamp(16px, calc(11px + 0.4vw), 18px);
+  letter-spacing: calc(0.8px + 0.008vw);
+  font-weight: bold;
+  font-family: "Labrada";
 }
 p {
-  font-size: clamp(14px, calc(12px + 0.4vw), 20px);
-  line-height: clamp(30px, calc(24px + 0.66vw), 36px);
+  font-size: clamp(13px, calc(11px + 0.4vw), 18px);
+  line-height: clamp(27px, calc(22px + 0.66vw), 33px);;
+  font-family: "Roboto";
+  // font-family: "Reem Kufi fun";
 }
 
-h1,
-h2,
-h3,
-h4,
-h4,
-h5 {
-  font-weight: bold;
+.text-shadow {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
-
-.text-clip {
-  width: fit-content;
-  background: linear-gradient(45deg, #f09104 0%, #e418eb 100%);
-  background-clip: text;
-  color: transparent;
+.dark .text-shadow {
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.7);
 }
