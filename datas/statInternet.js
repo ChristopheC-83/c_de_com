@@ -14,7 +14,7 @@ export const statInternet = [
     {
         id : 20,
         qtt : "59 %",
-        text : "59 % du réseau internt passe par un smartphone plutôt qu'un pc.",
+        text : "59 % du réseau internet passe par un smartphone plutôt qu'un pc.",
         explain :"Votre site doit être adaptable à toutes les tailles d'écrans. Si votre communication est importante à vos yeux, ne laissez pas n'importe qui concevoir votre image numérique, faites appel à un professionnel. "
     },
     {
@@ -25,13 +25,13 @@ export const statInternet = [
     },
     {
         id : 40,
-        qtt : "1h46",
+        qtt : "1 h 46",
         text : "En 2023, c'est le temps passé par Français et par jour sur les réseaux sociaux.",
         explain :"Loin de remplacer votre site internet, il le complète. Il est un outil de communication et de marketing puissant. Il vous permet de toucher une audience plus large. En parallèle, votre site internet est votre vitrine, votre image de marque. Il reste votre propriété avec votre nom de domaine, votre image de professionnel. Il véhicule vos informations, vos valeurs... et ce, sans les limites des réseaux sociaux."
     },
     {
         id : 50,
-        qtt : "2min17",
+        qtt : "2 min 17",
         text : "Le temps moyen que vous avez pour montrer qui vous êtes et ce que vous faites!",
         explain :"Mettons en place un moyen clair et rapide de vous présenter. Votre site internet doit être votre vitrine, votre image de marque. Des avis, des 'Qui sommes-nous ?', un moyen de contact... tout doit être clair, rapide et identifiable. Faites vous accompagner pour qu'un professionnel mette sur tous les écrans du monde qui vous êtes !"
     },

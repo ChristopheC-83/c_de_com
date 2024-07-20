@@ -1,4 +1,5 @@
 import EarthComponent from "./components/EarthComponent";
+import Stat from "./components/Stat";
 
 
 
@@ -7,8 +8,10 @@ import EarthComponent from "./components/EarthComponent";
 
 
 return (
-    <div className="container">
+    <div className="">
         <EarthComponent/>
+        <Stat/>
+        
 
 
     </div>
