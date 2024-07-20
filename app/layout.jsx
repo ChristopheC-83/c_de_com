@@ -3,6 +3,7 @@ import "@/public/style/style.css";
 import Header from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
 
+
 export const metadata = {
   title: "Compagnon de Com'",
   description: "Développez votre communication avec un site web sur mesure.",
