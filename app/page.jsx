@@ -7,7 +7,7 @@ import HomePage from "./(pages)/home/page";
 export default function Home() {
 
   useEffect(() => {
-    const themes = ['blue', 'green', 'red', 'yellow'];
+    const themes = ['sunshine','blue', 'green', 'red', 'yellow'];
 
     function applyRandomTheme() {
       const randomTheme = themes[Math.floor(Math.random() * themes.length)];

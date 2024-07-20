@@ -8,6 +8,14 @@
   --color-shadow: rgba(250, 142, 2, 0.75);
 }
 
+/* Thème sunshine */
+[data-theme=sunshine] {
+  --color-primary: rgb(240, 145, 4);
+  --color-secondary: rgb(228, 24, 235);
+  --color-background: #f0910495;
+  --color-shadow: rgba(250, 142, 2, 0.75);
+}
+
 /* Thème Bleu */
 [data-theme=blue] {
   --color-primary: #3498db;
