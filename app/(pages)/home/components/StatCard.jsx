@@ -9,7 +9,7 @@ export default function StatCard({ stat }) {
 
   function chooseStat(id) {
     setSelectedStat(id);
-    console.log(id);
+    // console.log(id);
   }
 
   return (
