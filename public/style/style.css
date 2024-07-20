@@ -2,50 +2,52 @@
 /* styles.css */
 /* Thème par défaut */
 :root {
-  --color-primary: rgb(240, 145, 4);
-  --color-secondary: rgb(228, 24, 235);
-  --color-background: #f0910495;
-  --color-shadow: rgba(250, 142, 2, 0.75);
+  --color-primary: rgb(255, 255,255);
+  --color-secondary: rgb(255, 255,255);
+  --color-background: rgb(255, 255,255);
+  --color-shadow: rgb(255, 255,255);
 }
 
-/* Thème sunshine */
 [data-theme=sunshine] {
-  --color-primary: rgb(240, 145, 4);
-  --color-secondary: rgb(228, 24, 235);
+  --color-primary: #f09104;
+  --color-secondary: #e418eb;
   --color-background: #f0910495;
-  --color-shadow: rgba(250, 142, 2, 0.75);
+  --color-shadow: #fa8e02bf;
 }
 
-/* Thème Bleu */
-[data-theme=blue] {
-  --color-primary: #3498db;
-  --color-secondary: #2980b9;
-  --color-background: #d6eaf8;
-  --color-shadow: rgba(52, 152, 219, 0.75);
+[data-theme=happy] {
+  --color-primary: #53c9d1;
+  --color-secondary: #66a6ff;
+  --color-background: #53c9d195;
+  --color-shadow: #48a8afbf;
 }
 
-/* Thème Vert */
-[data-theme=green] {
-  --color-primary: #2ecc71;
-  --color-secondary: #27ae60;
-  --color-background: #d4efdf;
-  --color-shadow: rgba(46, 204, 113, 0.75);
+[data-theme=deep] {
+  --color-primary: #6a11cb;
+  --color-secondary: #2575fc;
+  --color-background: #6a11cb95;
+  --color-shadow: #5d10afbf;
 }
 
-/* Thème Rouge */
-[data-theme=red] {
-  --color-primary: #e74c3c;
-  --color-secondary: #c0392b;
-  --color-background: #f9ebea;
-  --color-shadow: rgba(231, 76, 60, 0.75);
+[data-theme=dark] {
+  --color-primary: #434343 ;
+  --color-secondary: #000000;
+  --color-background: #43434395 ;
+  --color-shadow: #434343bf;
 }
 
-/* Thème Jaune */
-[data-theme=yellow] {
-  --color-primary: #f1c40f;
-  --color-secondary: #f39c12;
-  --color-background: #fcf3cf;
-  --color-shadow: rgba(241, 196, 15, 0.75);
+[data-theme=gray] {
+  --color-primary: #29323c ;
+  --color-secondary: #485563;
+  --color-background: #29323c95 ;
+  --color-shadow: #29323cbf ;
+}
+
+[data-theme=salad] {
+  --color-primary: #96f7cb ;
+  --color-secondary: #50A7C2;
+  --color-background: #96f7cb95 ;
+  --color-shadow: rgba(143, 219, 185, 0.749) ;
 }
 
 /* Utilisation des variables */
