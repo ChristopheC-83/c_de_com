@@ -1,3 +1,4 @@
+@import "custom/themes";
 @import "custom/main";
 @import "custom/polices";
 @import "custom/common";
@@ -17,9 +18,4 @@
   transform: translate(-50%, -50%);
 }
 
-.posMid-2,
-.midPos-2 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-}
+

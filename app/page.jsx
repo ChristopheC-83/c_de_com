@@ -1,7 +1,6 @@
 "use client"
 
 import { useEffect } from "react";
-import Stat from "./(pages)/home/components/Stat";
 import HomePage from "./(pages)/home/page";
 
 export default function Home() {

@@ -12,7 +12,6 @@ return (
     <div className="">
         <EarthComponent/>
         <Stat/>
-        <StatDetails/>
         
 
 

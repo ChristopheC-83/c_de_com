@@ -7,9 +7,10 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import StatCard from "./StatCard";
+import StatDetails from "./StatDetails";
 
 export default function Stat() {
-  console.log(statInternet);
+  // console.log(statInternet);
   return (
     <div className="container mt-0 overflow-x-hidden">
       <Carousel className="w-full" opts={{
@@ -34,6 +35,7 @@ export default function Stat() {
           ))}
         </CarouselContent>
       </Carousel>
+      <div className="h-[375px]"><StatDetails/></div>
     </div>
   );
 }
