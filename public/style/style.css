@@ -14,8 +14,20 @@
   color: transparent;
 }
 
+.text-color1 {
+  color: rgb(240, 145, 4);
+}
+
+.text-color2 {
+  color: rgb(228, 24, 235);
+}
+
 .customBorder {
   border: 1px solid rgb(228, 24, 235);
+}
+
+.filterShadow {
+  filter: drop-shadow(1px 1px 3px rgba(250, 142, 2, 0.75));
 }
 
 .customShadow {
@@ -114,4 +126,10 @@ p {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.posMid-2, .midPos-2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
 }/*# sourceMappingURL=style.css.map */

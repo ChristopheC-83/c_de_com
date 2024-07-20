@@ -28,10 +28,10 @@ export default function StatCard({ stat }) {
               </div>
             </div>
             <h4 className="p-2 mx-auto mt-6 mb-4 text-3xl rounded-full cursor-pointer animate-pulse bg-clip w-fit flip_hover">
-              <MdOutlineTouchApp />
+              <MdOutlineTouchApp className="text-white" />
             </h4>
           </div>
-          <p>{stat.text}</p>
+          <p className="font-semibold ">{stat.text}</p>
         </div>
       </div>
     </div>

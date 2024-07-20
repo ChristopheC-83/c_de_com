@@ -17,11 +17,11 @@ export default function Stat() {
           loop: true,
         }}>
         <div className="gap-4 mx-auto my-3 flexMid">
-          <CarouselPrevious variant="arrow" />
+          <CarouselPrevious variant="arrow" className="text-white"/>
           <h2 className="pb-3 text-clip w-fit ">
             Le saviez-vous ?
           </h2>
-          <CarouselNext variant="arrow" />
+          <CarouselNext variant="arrow" className="text-white"/>
         </div>
         <CarouselContent>
           {statInternet.map((stat) => (
