@@ -14,7 +14,7 @@ export default function StatCard({ stat }) {
 
   return (
     <div
-      className="w-[220px] h-full hover:scale-105 duration-300 "
+      className="w-[220px] h-full hover:scale-105 duration-300 max-sm:scale-[0.8] max-md:scale-[0.85] max-sm:hover:scale-[0.85] max-md:hover:scale-[0.9] max-xs:px-2 "
       onClick={() => chooseStat(stat.id)}
     >
       <div className="w-full h-full rounded-xl min-h-24 bg-neutral-50 cursor-grab customShadow customBorder">

@@ -28,7 +28,7 @@ export default function Stat() {
           {statInternet.map((stat) => (
             <CarouselItem
               key={stat.id}
-              className="mb-4 ml-4 basis-1/1 sm:basis-1/2 md:basis-1/3 lg:basis-1/4 midflex "
+              className="mb-4 ml-4 basis-1/2 sm:basis-1/3 lg:basis-1/4 midflex "
             >
               <StatCard stat={stat} />
             </CarouselItem>
