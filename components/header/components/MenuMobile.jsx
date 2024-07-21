@@ -32,22 +32,22 @@ export default function MenuMobile() {
           <GiHamburgerMenu className="scale-[1.5]" />
         </div>
       </SheetTrigger>
-      <SheetContent side="top" className="bg-neutral-100">
+      <SheetContent side="top" className="p-2 bg-neutral-100">
         <SheetHeader>
           <SheetTitle>Une Question ?</SheetTitle>
         </SheetHeader>
         <div className="flex flex-col items-start justify-between mt-10 gap-y-8">
           {/* Menu ici */}
-          <NavigationMenu>
-            <NavigationMenuList data-orientation="horizontal" className="">
+          <NavigationMenu className="max-xs:-translate-x-7">
+            <NavigationMenuList data-orientation="horizontal" className="max-xs:scale-[0.9] ">
               {/* Les Déroulants */}
               {menuLinks.map((menuLink, index) => (
                 <NavigationMenuItem key={index}>
                   <NavigationMenuTrigger>
                     <h4>{menuLink.menu}</h4>
                   </NavigationMenuTrigger>
-                  <NavigationMenuContent className="z-20">
-                    <ul className="grid gap-3 p-6 w-[280px] md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
+                  <NavigationMenuContent className="z-20 mx-auto flexMid">
+                    <ul className="grid gap-3 p-6 w-[280px] md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr] max-xs:mx-auto max-xs:translate-x-2">
                       <li className="row-span-3">
                         <NavigationMenuLink asChild>
                           <div className="flex flex-col items-center space-x-4">

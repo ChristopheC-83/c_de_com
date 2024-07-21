@@ -36,7 +36,7 @@ export const menuLinks = [
     {
         menu : "Tarifs",
         title: "Combien ça coûte ?",
-        text:"  Plat à la carte ou menu ?<br /> Menu complet ?<br />ou plat / dessert ?",
+        text:"  Plat à la carte ou menu ?<br /> Menu complet ?<br />ou plat / dessert ?<br />A vous de choisir !",
         conclusion : "Débrousaillons la question !",
         links : [
             {
