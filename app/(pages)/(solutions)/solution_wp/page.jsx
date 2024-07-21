@@ -1,13 +1,13 @@
 
 
 
- export default function Solutions() {
+ export default function WP() {
 
 
 
 return (
     <div>
-
+wordpress
 
 
     </div>

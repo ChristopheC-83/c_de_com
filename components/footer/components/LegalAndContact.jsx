@@ -6,7 +6,7 @@ export default function LegalAndContact() {
       <div className="flex">
         <h3 className="hidden text-clip sm:block">Compagnon de Com&apos;</h3>
       </div>
-      <Link href="about" className="w-fit">
+      <Link href="about_me" className="w-fit">
         <h4 className="mb-4 sm:mt-12 hover:underline w-fit">Qui suis-je ?</h4>
       </Link>
       <h4 className="mt-0 mb-2 ">

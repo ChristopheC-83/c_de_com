@@ -35,7 +35,7 @@ export default function Stat() {
           ))}
         </CarouselContent>
       </Carousel>
-      <div className="min-h-[375px] w-full pb-2"><StatDetails/></div>
+      <div className="min-h-[375px] w-full pb-4"><StatDetails/></div>
     </div>
   );
 }

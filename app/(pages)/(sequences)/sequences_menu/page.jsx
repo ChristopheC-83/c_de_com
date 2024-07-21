@@ -1,13 +1,13 @@
 
 
 
- export default function About() {
+ export default function Sequences() {
 
 
 
 return (
     <div>
-
+Etapes
 
 
     </div>

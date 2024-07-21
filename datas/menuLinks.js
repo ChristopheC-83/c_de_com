@@ -8,15 +8,15 @@ export const menuLinks = [
         links : [
             {
                 title : "Un site dynamique",
-                href : "/site_dynamic"
+                href : "/solution_dynamic"
             },
             {
                 title : "Un site statique",
-                href : "/site_static"
+                href : "/solution_static"
             },
             {
                 title : "Conception autonome / Site préfabriqué",
-                href : "/site_wordpress"
+                href : "/site_wp"
             }
         ]
     },
@@ -28,7 +28,7 @@ export const menuLinks = [
         links : [
             {
                 title : "Votre site en quelques étapes",
-                href : "/sequences"
+                href : "/sequences_menu"
             },
            
         ]
@@ -41,7 +41,7 @@ export const menuLinks = [
         links : [
             {
                 title : "Menu des tarifs",
-                href : "/prices"
+                href : "/prices_menu"
             },
             {
                 title : "Pour un site statique",
