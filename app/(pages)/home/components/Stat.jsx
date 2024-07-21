@@ -12,7 +12,7 @@ import StatDetails from "./StatDetails";
 export default function Stat() {
   // console.log(statInternet);
   return (
-    <div className="container mt-0 overflow-x-hidden">
+    <div className="container px-4 mt-0 overflow-x-hidden xs:px-6 md:px-8">
       <Carousel className="w-full" opts={{
           align: "start",
           loop: true,
@@ -28,14 +28,14 @@ export default function Stat() {
           {statInternet.map((stat) => (
             <CarouselItem
               key={stat.id}
-              className="mb-4 ml-4 basis-1/2 sm:basis-1/3 lg:basis-1/4 midflex "
+              className="mb-4 ml-4 basis-1/1 xs:basis-1/2 sm:basis-1/3 lg:basis-1/4 midflex "
             >
               <StatCard stat={stat} />
             </CarouselItem>
           ))}
         </CarouselContent>
       </Carousel>
-      <div className="h-[375px] w-full"><StatDetails/></div>
+      <div className="min-h-[375px] w-full pb-2"><StatDetails/></div>
     </div>
   );
 }

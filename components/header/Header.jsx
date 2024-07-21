@@ -6,46 +6,10 @@ import MenuScreen from "./components/MenuScreen";
 import MenuMobile from "./components/MenuMobile";
 
 export default function Header() {
-  const components = [
-    {
-      title: "Alert Dialog",
-      href: "/docs/primitives/alert-dialog",
-      description:
-        "A modal dialog that interrupts the user with important content and expects a response.",
-    },
-    {
-      title: "Hover Card",
-      href: "/docs/primitives/hover-card",
-      description:
-        "For sighted users to preview content available behind a link.",
-    },
-    {
-      title: "Progress",
-      href: "/docs/primitives/progress",
-      description:
-        "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
-    },
-    {
-      title: "Scroll-area",
-      href: "/docs/primitives/scroll-area",
-      description: "Visually or semantically separates content.",
-    },
-    {
-      title: "Tabs",
-      href: "/docs/primitives/tabs",
-      description:
-        "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
-    },
-    {
-      title: "Tooltip",
-      href: "/docs/primitives/tooltip",
-      description:
-        "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
-    },
-  ];
+ 
 
   return (
-    <header className="z-50 py-3 shadow-md md:py-6">
+    <header className="z-50 px-2 py-3 shadow-md md:py-6 md:px-4">
       <div className="container flex items-center justify-between px-1">
         <div className="duration-200 hover:opacity-80">
           <Link href="/">
