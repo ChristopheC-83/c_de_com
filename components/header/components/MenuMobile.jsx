@@ -36,11 +36,11 @@ export default function MenuMobile() {
         <SheetHeader>
           <SheetTitle>Une Question ?</SheetTitle>
         </SheetHeader>
-        <div className="flex flex-col items-start mt-10 justify-evenly gap-y-8">
+        <div className="flex flex-col items-start justify-between mt-10 gap-y-8">
           {/* Menu ici */}
           <NavigationMenu>
             <NavigationMenuList data-orientation="horizontal" className="">
-              {/* Solutions */}
+              {/* Les Déroulants */}
               {menuLinks.map((menuLink, index) => (
                 <NavigationMenuItem key={index}>
                   <NavigationMenuTrigger>
@@ -56,25 +56,28 @@ export default function MenuMobile() {
                             </div>
                             <p
                               className="leading-tight text-md text-muted-foreground"
-                              dangerouslySetInnerHTML={{ __html: menuLink.text }}
+                              dangerouslySetInnerHTML={{
+                                __html: menuLink.text,
+                              }}
                             ></p>
                           </div>
                         </NavigationMenuLink>
                       </li>
                       {menuLink.links.map((link, idx) => (
-
-                      <Link key={idx} href={link.href} >
-                       <p><u>{link.title}</u></p>
-                      </Link>
-                        
+                        <Link key={idx} href={link.href}>
+                          <p>
+                            <u>{link.title}</u>
+                          </p>
+                        </Link>
                       ))}
-                    
                     </ul>
                   </NavigationMenuContent>
                 </NavigationMenuItem>
               ))}
             </NavigationMenuList>
           </NavigationMenu>
+          {/* Les liens directs */}
+          
         </div>
         <SheetFooter>
           <SheetClose asChild>

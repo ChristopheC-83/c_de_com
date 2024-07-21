@@ -10,10 +10,10 @@ export default function FooterNetworks() {
         <u>Me suivre :</u>
       </h4>
       {socialLinks.map((link) => (
-        <Link href={link.href} key={link.id} className="flex items-center gap-6 my-4 hover:text-primary">
+        <Link href={link.href} key={link.id} className="flex items-center gap-6 my-4 text-neutral-700 group">
          
-              <div className="text-2xl">{link.icon}</div>
-              <h5>{link.label}</h5>
+              <div className="text-2xl filterShadow text-neutral-700">{link.icon}</div>
+              <h5 className="group-hover:underline">{link.label}</h5>
           
         </Link>
       ))}

@@ -52,8 +52,9 @@ export default function Header() {
             <h2 className="text-clip text-nowrap">Compagnon de Com&apos;</h2>
           </Link>
         </div>
-        <div className="max-md:hidden">
-          <MenuScreen />
+        <div className="flex max-md:hidden">
+          <MenuScreen />{" "}
+          
         </div>
 
         <Link href="/contact" className="max-md:hidden">
@@ -62,8 +63,8 @@ export default function Header() {
           </button>
         </Link>
         <div className=" md:hidden">
-        <MenuMobile />
-      </div>
+          <MenuMobile />
+        </div>
       </div>
     </header>
   );

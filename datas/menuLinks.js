@@ -27,7 +27,7 @@ export const menuLinks = [
         conclusion : "VOTRE outil de communication !",
         links : [
             {
-                title : "Votre site en X étapes",
+                title : "Votre site en quelques étapes",
                 href : "/sequences"
             },
            
