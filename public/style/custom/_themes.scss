@@ -1,8 +1,13 @@
 :root {
-    --color-primary: rgb(255, 255,255);
-    --color-secondary: rgb(255, 255,255);
-    --color-background: rgb(255, 255,255);
-    --color-shadow: rgb(255, 255,255);
+    // --color-primary: rgb(255, 255,255);
+    // --color-secondary: rgb(255, 255,255);
+    // --color-background: rgb(255, 255,255);
+    // --color-shadow: rgb(255, 255,255);
+    
+    --color-primary: #f09104;
+    --color-secondary: #e418eb;
+    --color-background: #f0910495;
+    --color-shadow: #fa8e02bf;
   }
   
   [data-theme="sunshine"] {
