@@ -1,6 +1,7 @@
-import EarthComponent from "./components/EarthComponent";
+import EarthComponent from "./components/_EarthComponent";
 import Stat from "./components/Stat";
-import StatDetails from "./components/StatDetails";
+import StatDetails from "./components/_StatDetails";
+import Needs from "./components/Needs";
 
 
 
@@ -12,9 +13,8 @@ return (
     <div className="">
         <EarthComponent/>
         <Stat/>
+        <Needs/>
         
-
-
     </div>
 
   );

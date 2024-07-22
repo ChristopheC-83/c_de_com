@@ -12,6 +12,10 @@ export const menuLinks = [
             },
             
             {
+                title : "Un site statique",
+                href : "/solution_static"
+            },
+            {
                 title : "Un site dynamique",
                 href : "/solution_dynamic"
             },

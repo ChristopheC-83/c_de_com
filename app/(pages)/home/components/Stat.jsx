@@ -6,8 +6,8 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import StatCard from "./StatCard";
-import StatDetails from "./StatDetails";
+import StatCard from "./_StatCard";
+import StatDetails from "./_StatDetails";
 
 export default function Stat() {
   // console.log(statInternet);
