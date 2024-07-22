@@ -10,6 +10,7 @@ import {
 } from "@/components/ui/navigation-menu";
 import Link from "next/link";
 import { menuLinks } from "@/datas/menuLinks";
+import ListItem from "./ListItem";
 
 export default function MenuScreen() {
   return (
@@ -39,13 +40,15 @@ export default function MenuScreen() {
                       </div>
                     </NavigationMenuLink>
                   </li>
-                  {menuLink.links.map((link, idx) => (
-                    <Link key={idx} href={link.href}>
-                      <p>
-                        <u>{link.title}</u>
-                      </p>
-                    </Link>
-                  ))}
+                  <div className="flex-col">
+                    {menuLink.links.map((link, idx) => (
+                      <ListItem  key={idx} href={link.href} className="py-3">
+                        <p>
+                          <u>{link.title}</u>
+                        </p>
+                      </ListItem>
+                    ))}
+                  </div>
                 </ul>
               </NavigationMenuContent>
             </NavigationMenuItem>

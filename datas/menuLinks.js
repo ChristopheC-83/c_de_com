@@ -7,12 +7,13 @@ export const menuLinks = [
         conclusion : "Regardons ensemble 4 possibilités !",
         links : [
             {
+                title : "Vue globale des solutions",
+                href : "/solution_all"
+            },
+            
+            {
                 title : "Un site dynamique",
                 href : "/solution_dynamic"
-            },
-            {
-                title : "Un site statique",
-                href : "/solution_static"
             },
             {
                 title : "Conception autonome / Site préfabriqué",

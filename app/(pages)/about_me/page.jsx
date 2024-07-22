@@ -45,6 +45,13 @@ export default function About() {
             <p>et évidemment un peu d'informatique ! </p>
             <p>{arrow} 3 ans de formations, d'attestations, de diplômes...</p>
             <p>Je n'arrive pas les mains vides quand même !</p>
+            <br />
+            <h5>
+              Voilà donc ma proposition ! <br />
+              Pas que de la tech !<br />
+              Mais également une vue commerciale <br /> et un savoir-être au service
+              des clients.
+            </h5>
           </div>
 
           <div className="w-full p-3 mb-4 md:grow customShadow customBorder rounded-xl sm:p-4 lg:p-5 xl:p-6 sm:mb-5 md:mb-6">
@@ -76,6 +83,8 @@ export default function About() {
               😉), vous ferai des proposition.
             </p>
             <p>Bien évidemment, vous aurez le dernier mot!</p>
+            <br />
+            <h5>Pour un site qui vous ressemble car vous aurez participé à sa création !</h5>
           </div>
         </div>
 
