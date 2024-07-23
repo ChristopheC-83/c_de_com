@@ -13,6 +13,10 @@
   color: transparent;
 }
 
+.textShadowClip {
+  text-shadow: 1px 1px 3px var(--color-shadow);
+}
+
 .text-color1 {
   color: var(--color-primary);
 }
