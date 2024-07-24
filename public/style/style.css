@@ -179,6 +179,10 @@ p {
     transform: rotateY(-360deg);
   }
 }
+.shadow_spectre {
+  box-shadow: 0 0 20px 5px rgba(250, 250, 250, 0.6);
+}
+
 .midFlex,
 .flexMid {
   display: flex;

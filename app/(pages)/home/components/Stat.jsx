@@ -23,7 +23,7 @@ export default function Stat() {
         }}
       >
         <div className="flex items-center justify-between my-6">
-          <div className="gap-4 mx-auto my-3 flexMid">
+          <div className="gap-4 px-4 py-2 mx-auto my-3 rounded-full flexMid bg-neutral-50/50 shadow_spectre">
             <CarouselPrevious variant="arrow" className="text-white" />
             <h2 className="pb-3 text-clip w-fit ">Le saviez-vous ?</h2>
             <CarouselNext variant="arrow" className="text-white" />
