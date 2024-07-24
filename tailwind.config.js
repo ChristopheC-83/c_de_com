@@ -8,6 +8,9 @@ module.exports = {
     "./src/**/*.{js,jsx}",
   ],
   prefix: "",
+  safelist: [
+    'tooltip_visible', // Ajoute ta classe personnalisée ici
+  ],
   theme: {
     container: {
       center: true,

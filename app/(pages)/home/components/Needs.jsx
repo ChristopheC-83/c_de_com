@@ -1,8 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
 import { Separator } from "@/components/ui/separator";
 import { needsItems } from "@/datas/needsItems";
-import Icons from "./_Icons";
 import { Button } from "@/components/ui/button";
+import IconsUsers from "./_IconsUsers";
 import idea from "@/public/images/frames/idea.jpg";
 import Image from "next/image";
 
@@ -42,10 +42,10 @@ export default function Needs() {
             key={item.id}
             className="flex flex-col items-center justify-between w-[49%] p-2 customBorder customShadow rounded-xl xs:p-3 md:p-4 max-md:w-full"
           >
-            <div className="flex items-end w-full mt-2 mb-5 rounded-full justify-evenly">
-              <Icons size="text-2xl"> {item.icon1} </Icons>
-              <Icons size="text-4xl"> {item.icon2} </Icons>
-              <Icons size="text-2xl"> {item.icon3} </Icons>
+            <div className="flex items-end justify-center w-full mb-6 gap-x-20">
+              {item.icons.map((icon, index) => (
+                  <IconsUsers key={index} datas={icon} />
+              ))}
             </div>
             <p
               className="mb-5"
