@@ -44,7 +44,7 @@ export default function Needs() {
           >
             <div className="flex items-end justify-center w-full mb-6 gap-x-20">
               {item.icons.map((icon, index) => (
-                  <IconsUsers key={index} datas={icon} />
+                  <IconsUsers key={index} datas={icon} index={index}/>
               ))}
             </div>
             <p
