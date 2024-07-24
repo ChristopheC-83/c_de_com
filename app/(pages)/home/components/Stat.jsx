@@ -28,7 +28,7 @@ export default function Stat() {
             <h2 className="pb-3 text-clip w-fit ">Le saviez-vous ?</h2>
             <CarouselNext variant="arrow" className="text-white" />
           </div>
-          <div className="basis-1/2 sm:justify-start sm:items-start midFlex">
+          {/* <div className="basis-1/2 sm:justify-start sm:items-start midFlex">
             <Image
               src={surprise}
               alt="christophe c."
@@ -37,7 +37,7 @@ export default function Stat() {
               className="object-cover border-2 rounded-full shadow border-ring bg-gradient-to-bl from-teal-400 to-indigo-300 customShadow aspect-square"
               priority={true}
             />
-          </div>
+          </div> */}
         </div>
         <CarouselContent>
           {statInternet.map((stat) => (

@@ -1,8 +1,10 @@
 :root {
-  --color-primary: #96f7cb ;
-  --color-secondary: #50A7C2;
-  --color-background: #96f7cb95 ;
-  --color-shadow: rgba(143, 219, 185, 0.749) ;
+  --color-primary: #96f7cb;
+  --color-secondary: #50a7c2;
+  --color-background: #96f7cb95;
+  --color-shadow: rgba(143, 219, 185, 0.749);
+  --color-primary-op: #96f7cb99;
+  --color-secondary-op: #50a7c299;
 }
 
 [data-theme=sunshine] {
@@ -27,29 +29,33 @@
 }
 
 [data-theme=dark] {
-  --color-primary: #434343 ;
+  --color-primary: #434343;
   --color-secondary: #000000;
-  --color-background: #43434395 ;
+  --color-background: #43434395;
   --color-shadow: #434343bf;
 }
 
 [data-theme=gray] {
-  --color-primary: #29323c ;
+  --color-primary: #29323c;
   --color-secondary: #485563;
-  --color-background: #29323c95 ;
-  --color-shadow: #29323cbf ;
+  --color-background: #29323c95;
+  --color-shadow: #29323cbf;
 }
 
 [data-theme=salad] {
-  --color-primary: #96f7cb ;
-  --color-secondary: #50A7C2;
-  --color-background: #96f7cb95 ;
-  --color-shadow: rgba(143, 219, 185, 0.749) ;
+  --color-primary: #96f7cb;
+  --color-secondary: #50a7c2;
+  --color-background: #96f7cb95;
+  --color-shadow: rgba(143, 219, 185, 0.749);
 }
 
 /* Utilisation des variables */
 .bg-clip {
   background: linear-gradient(45deg, var(--color-background) 0%, var(--color-secondary) 100%);
+}
+
+.bg-clip-opacity {
+  background: linear-gradient(45deg, var(--color-primary-op) 0%, var(--color-secondary-op) 100%);
 }
 
 .text-clip {
@@ -80,6 +86,10 @@
 
 .customShadow {
   box-shadow: 0px 5px 8px 2px var(--color-shadow);
+}
+
+.customShadowLg {
+  box-shadow: 0px 0px 15px 6px var(--color-shadow);
 }
 
 .customShadowXl {

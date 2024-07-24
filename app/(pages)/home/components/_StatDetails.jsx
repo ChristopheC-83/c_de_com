@@ -10,7 +10,7 @@ export default function StatDetails() {
   const stat = statInternet.find((stat) => stat.id === selectedStat);
 
   return (
-    <div className="flex flex-col w-full h-auto mt-8 p-1.5 xs:p-2 sm:p-3 md:p-4 customShadow rounded-xl customBorder gap-4">
+    <div className="flex flex-col w-full h-auto mt-8 p-1.5 xs:p-2 sm:p-3 md:p-4 customShadow rounded-xl customBorder gap-4 bg-neutral-50">
       <div className="flexMid">
         <h3 className="p-2 m-2 text-white bg-clip midFlex rounded-xl text-nowrap">
           {stat.qtt}
