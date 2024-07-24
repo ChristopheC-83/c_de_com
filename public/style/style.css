@@ -1,8 +1,12 @@
 :root {
-  --color-primary-op: #ffffff99;
-  --color-secondary-op: #ffffff99;
-  --color-primary-op2: #ffffff15;
-  --color-secondary-op2: #ffffff15;
+  --color-primary: #434343;
+  --color-secondary: #000000;
+  --color-background: #43434395;
+  --color-shadow: #434343bf;
+  --color-primary-op: #43434399;
+  --color-secondary-op: #00000099;
+  --color-primary-op2: #43434315;
+  --color-secondary-op2: #00000015;
 }
 
 [data-theme=sunshine] {
