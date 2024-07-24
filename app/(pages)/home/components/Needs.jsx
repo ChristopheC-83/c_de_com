@@ -26,22 +26,21 @@ export default function Needs() {
           Déterminons vos besoins !
         </h2>
       </div>
-      <div className="flex justify-between w-full gap-4 pb-4 max-md:flex-col">
+      <div className="flex justify-between w-full gap-4 pb-4 max-md:flex-col ">
         {needsItems.map((item) => (
           <div
             key={item.id}
-            className="flex flex-col items-center justify-between w-[49%] p-2 customBorder customShadow rounded-xl xs:p-3 md:p-4 max-md:w-full"
+            className="flex flex-col items-center justify-between w-[49%] p-2 customBorder customShadow rounded-xl xs:p-3 md:p-4 max-md:w-full bg-clip-opacity-white "
           >
             <div className="flex items-end justify-center w-full mb-6 gap-x-10 xs:gap-x-20">
               {item.icons.map((icon, index) => (
-                  <IconsUsers key={index} datas={icon} index={index}/>
+                <IconsUsers key={index} datas={icon} index={index} />
               ))}
             </div>
             <p
               className="mb-5"
               dangerouslySetInnerHTML={{ __html: item.description }}
             ></p>
-
             <Link
               href={item.href}
               className="p-4 mb-3 text-white duration-200 rounded-full bg-clip hover:opacity-80 "

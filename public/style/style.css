@@ -1,10 +1,8 @@
 :root {
-  --color-primary: #96f7cb;
-  --color-secondary: #50a7c2;
-  --color-background: #96f7cb95;
-  --color-shadow: rgba(143, 219, 185, 0.749);
-  --color-primary-op: #96f7cb99;
-  --color-secondary-op: #50a7c299;
+  --color-primary-op: #ffffff99;
+  --color-secondary-op: #ffffff99;
+  --color-primary-op2: #ffffff15;
+  --color-secondary-op2: #ffffff15;
 }
 
 [data-theme=sunshine] {
@@ -12,6 +10,10 @@
   --color-secondary: #e418eb;
   --color-background: #f0910495;
   --color-shadow: #fa8e02bf;
+  --color-primary-op: #f0910499;
+  --color-secondary-op: #e418eb99;
+  --color-primary-op2: #f0910415;
+  --color-secondary-op2: #e418eb15;
 }
 
 [data-theme=happy] {
@@ -19,6 +21,10 @@
   --color-secondary: #66a6ff;
   --color-background: #53c9d195;
   --color-shadow: #48a8afbf;
+  --color-primary-op: #53c9d199;
+  --color-secondary-op: #66a6ff99;
+  --color-primary-op2: #53c9d115;
+  --color-secondary-op2: #66a6ff15;
 }
 
 [data-theme=deep] {
@@ -26,6 +32,10 @@
   --color-secondary: #2575fc;
   --color-background: #6a11cb95;
   --color-shadow: #5d10afbf;
+  --color-primary-op: #6a11cb99;
+  --color-secondary-op: #2575fc99;
+  --color-primary-op2: #6a11cb15;
+  --color-secondary-op2: #2575fc15;
 }
 
 [data-theme=dark] {
@@ -33,6 +43,10 @@
   --color-secondary: #000000;
   --color-background: #43434395;
   --color-shadow: #434343bf;
+  --color-primary-op: #43434399;
+  --color-secondary-op: #00000099;
+  --color-primary-op2: #43434315;
+  --color-secondary-op2: #00000015;
 }
 
 [data-theme=gray] {
@@ -40,6 +54,10 @@
   --color-secondary: #485563;
   --color-background: #29323c95;
   --color-shadow: #29323cbf;
+  --color-primary-op: #29323c99;
+  --color-secondary-op: #48556399;
+  --color-primary-op2: #29323c15;
+  --color-secondary-op2: #48556315;
 }
 
 [data-theme=salad] {
@@ -47,6 +65,10 @@
   --color-secondary: #50a7c2;
   --color-background: #96f7cb95;
   --color-shadow: rgba(143, 219, 185, 0.749);
+  --color-primary-op: #96f7cb99;
+  --color-secondary-op: #50a7c299;
+  --color-primary-op2: #96f7cb15;
+  --color-secondary-op2: #50a7c215;
 }
 
 /* Utilisation des variables */
@@ -56,6 +78,10 @@
 
 .bg-clip-opacity {
   background: linear-gradient(45deg, var(--color-primary-op) 0%, var(--color-secondary-op) 100%);
+}
+
+.bg-clip-opacity-white {
+  background: linear-gradient(45deg, var(--color-primary-op2) 0%, var(--color-secondary-op2) 100%);
 }
 
 .text-clip {

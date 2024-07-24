@@ -8,10 +8,18 @@
 }
 .bg-clip-opacity {
   background: linear-gradient(
-  45deg,
-  var(--color-primary-op) 0%,
-  var(--color-secondary-op) 100%
+    45deg,
+    var(--color-primary-op) 0%,
+    var(--color-secondary-op) 100%
   );
+}
+.bg-clip-opacity-white {
+  background:
+    linear-gradient(
+      45deg,
+      var(--color-primary-op2) 0%,
+      var(--color-secondary-op2) 100%
+    );
 }
 
 .text-clip {
