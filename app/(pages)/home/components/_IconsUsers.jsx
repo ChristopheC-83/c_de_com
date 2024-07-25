@@ -6,9 +6,9 @@ export default function _IconsUsers({ datas, index }) {
   return (
     <div className={`relative cursor-pointer group `}>
       <Icons > {datas.icon} </Icons>
-      <div className="absolute">
+      <div className="absolute shadow-lg">
         <div
-          className={`flex-col items-start hidden w-40 p-2 text-sm text-white duration-300 shadow-lg rounded-xl bg-neutral-900 group-hover:flex 
+          className={`flex-col items-start hidden w-40 p-2 text-sm text-white duration-300 shadow-xl rounded-xl bg-neutral-900 group-hover:flex 
             ${index == 1 ? "-translate-x-[45px] " : ""}
             ${index == 2 ? "-translate-x-[110px]" : ""}
             }

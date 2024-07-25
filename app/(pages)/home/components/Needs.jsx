@@ -29,7 +29,7 @@ export default function Needs() {
             key={item.id}
             className="flex flex-col items-center justify-between w-[49%] p-2 customBorder customShadow rounded-xl xs:p-3 md:p-4 max-md:w-full bg-clip-opacity-white "
           >
-            <div className="flex items-end justify-center w-full mb-6 gap-x-10 xs:gap-x-20">
+            <div className="flex items-end justify-center w-full mb-6 gap-x-10 xs:gap-x-20 ">
               {item.icons.map((icon, index) => (
                 <IconsUsers key={index} datas={icon} index={index} />
               ))}

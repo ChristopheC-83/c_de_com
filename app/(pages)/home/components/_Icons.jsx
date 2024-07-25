@@ -9,7 +9,7 @@ export default function Icons({ children, size = "text-xl" }) {
 
   return (
     <div
-      className={`p-3 text-3xl rounded-full filterShadow bg-clip flip_hover ${
+      className={`p-3 text-3xl rounded-full filterShadow bg-clip flip_hover shadow-lg ${
         themesWithWhiteText.includes(theme) ? "text-white" : ""
       }`}
     >
