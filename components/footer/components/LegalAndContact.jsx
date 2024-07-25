@@ -12,9 +12,9 @@ export default function LegalAndContact() {
       <h4 className="mt-0 mb-2 ">
         <u>Contact :</u>
       </h4>
-      <a href="mailto:contact@ducompagnon.fr">
+      <Link href="mailto:contact@ducompagnon.fr">
         <h5>contact@ducompagnon.fr</h5>
-      </a>
+      </Link>
 
       <h5 className="mt-12">
         2024 &copy; Christophe Chiappetta - Tous droits réservés

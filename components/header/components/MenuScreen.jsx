@@ -42,11 +42,11 @@ export default function MenuScreen() {
                   </li>
                   <div className="flex-col">
                     {menuLink.links.map((link, idx) => (
-                      <ListItem  key={idx} href={link.href} className="py-3">
-                        <p>
-                          <u>{link.title}</u>
-                        </p>
-                      </ListItem>
+                     <Link href={link.href} key={idx} className="p-3 space-y-1">
+                     <p>
+                       <u>{link.title}</u>
+                     </p>
+                   </Link>
                     ))}
                   </div>
                 </ul>

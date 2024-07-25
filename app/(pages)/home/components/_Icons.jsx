@@ -1,14 +1,11 @@
-import { useEffect, useState } from "react";
+import useThemeStore from "@/store/ThemeStore";
 
 export default function Icons({ children, size = "text-xl" }) {
   // On récupére le theme pour changer couleur des icones si besoin
-  const [theme, setTheme] = useState("");
+  const { theme } = useThemeStore();
   const themesWithWhiteText = ["dark", "gray", "deep"];
 
-  useEffect(() => {
-    const currentTheme = document.documentElement.getAttribute("data-theme");
-    setTheme(currentTheme || "default");
-  }, [theme]);
+
 
   return (
     <div

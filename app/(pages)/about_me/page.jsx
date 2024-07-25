@@ -1,4 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
+"use client";
 import Image from "next/image";
 import avatar from "@/public/images/about_me/avatar.png";
 import { LuArrowRightCircle } from "react-icons/lu";

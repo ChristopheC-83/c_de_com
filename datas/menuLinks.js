@@ -21,7 +21,7 @@ export const menuLinks = [
             },
             {
                 title : "Conception autonome / Site préfabriqué",
-                href : "/site_wp"
+                href : "/solution_wp"
             }
         ]
     },
