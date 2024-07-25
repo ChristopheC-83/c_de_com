@@ -5,11 +5,11 @@ import Icons from "./_Icons";
 export default function _IconsUsers({ datas, index }) {
   return (
     <div className={`relative cursor-pointer group `}>
-      <Icons size={datas.size}> {datas.icon} </Icons>
+      <Icons > {datas.icon} </Icons>
       <div className="absolute">
         <div
           className={`flex-col items-start hidden w-40 p-2 text-sm text-white duration-300 shadow-lg rounded-xl bg-neutral-900 group-hover:flex 
-            ${index == 1 ? "-translate-x-[45px]" : ""}
+            ${index == 1 ? "-translate-x-[45px] " : ""}
             ${index == 2 ? "-translate-x-[110px]" : ""}
             }
             translate-y-2

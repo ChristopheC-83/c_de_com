@@ -40,7 +40,7 @@ export default function Needs() {
             ></p>
             <Link
               href={item.href}
-              className="p-4 mb-3 text-white duration-200 rounded-full bg-clip hover:opacity-80 "
+              className="p-4 mb-3 text-white duration-200 rounded-full shadow-lg bg-clip hover:opacity-80"
             >
               <h4>{item.text_btn}</h4>
             </Link>

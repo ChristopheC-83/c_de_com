@@ -12,7 +12,7 @@ export default function StatDetails() {
   return (
     <div className="flex flex-col w-full h-auto mt-8 p-1.5 xs:p-2 sm:p-3 md:p-4 customShadow rounded-xl customBorder gap-4 bg-neutral-50">
       <div className="flexMid">
-        <h3 className="p-2 m-2 text-white bg-clip midFlex rounded-xl text-nowrap">
+        <h3 className="p-2 m-2 text-white shadow-lg bg-clip midFlex rounded-xl text-nowrap">
           {stat.qtt}
         </h3>
         <h5>{stat.text}</h5>

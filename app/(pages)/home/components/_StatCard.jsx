@@ -22,12 +22,12 @@ export default function StatCard({ stat }) {
           <div className="flex flex-col">
             <div className={`flex items-start justify-between gap-x-3`}>
               <div
-                className={`pb-2 pl-2 text-3xl midFlex w-full h-24 bg-clip rounded-xl`}
+                className={`pb-2 pl-2 text-3xl midFlex w-full h-24 bg-clip rounded-xl shadow-lg`}
               >
-                <h4 className="scale-150 text-neutral-50">{stat.qtt}</h4>
+                <h4 className="scale-150 text-neutral-50 ">{stat.qtt}</h4>
               </div>
             </div>
-            <h4 className="p-2 mx-auto mt-6 mb-4 text-3xl rounded-full cursor-pointer animate-pulse bg-clip w-fit flip_hover">
+            <h4 className="p-2 mx-auto mt-6 mb-4 text-3xl rounded-full shadow-lg cursor-pointer animate-pulse bg-clip w-fit flip_hover">
               <MdOutlineTouchApp className="text-white" />
             </h4>
           </div>
