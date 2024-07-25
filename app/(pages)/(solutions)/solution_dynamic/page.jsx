@@ -1,13 +1,13 @@
 
 
 
- export default function page() {
+ export default function Dynamic() {
 
 
 
 return (
     <div>
-dynamic page
+<h4 className={`text-clip`}>dynamic page</h4>
 
 
     </div>
