@@ -1,15 +1,48 @@
+// Formulaire non actif
+
 /* eslint-disable react/no-unescaped-entities */
 "use client";
+import { useEffect } from "react";
 import useThemeStore from "@/store/ThemeStore";
+import { useForm } from "react-hook-form";
+import { toast } from "sonner";
+
 export default function Contact() {
   const { theme } = useThemeStore();
   const themesWithWhiteText = ["dark", "gray", "deep"];
+
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+    watch,
+  } = useForm();
+
+  useEffect(() => {
+    if (errors.prenom) {
+      toast.error("Le prénom est requis");
+    }
+    if (errors.nom) {
+      toast.error("Le nom est requis");
+    }
+    if (errors.email) {
+      toast.error("L'email est requis");
+    }
+    if (errors.message) {
+      toast.error("Le message est requis");
+    }
+  }, [errors]);
+
+  function onSubmitHandler(data) {
+    console.log(data);
+  }
+
   return (
     <div className={`container min-h-svh`}>
       <h1 className={`text-clip text-center my-6`}>Formulaire de contact</h1>
 
       <div className="flex flex-col w-full h-auto mt-8 p-1.5 xs:p-2 sm:p-3 md:p-4 customShadow rounded-xl customBorder gap-4 bg-gradient-to-tr from-neutral-200 to-neutral-100 ">
-        <form>
+        <form onSubmit={handleSubmit(onSubmitHandler)}>
           <div className="flex w-full max-md:flex-col md:gap-x-4">
             {/* prénom */}
             <label
@@ -19,11 +52,12 @@ export default function Contact() {
               <input
                 type="text"
                 id="prenom"
-                className="p-4 placeholder-transparent bg-transparent border-none peer focus:border-transparent focus:outline-none focus:rinplaceholder-gray-50 "
+                className="w-full p-4 placeholder-transparent bg-transparent border-none peer focus:border-transparent focus:outline-none focus:rinplaceholder-gray-50 rounded-xl"
                 placeholder="prenom"
+                {...register("prenom", { required: true })}
               />
               <span
-                className={`pointer-events-none absolute start-2.5 top-0 -translate-y-1/2 bg-clip p-2 rounded-full text-xs  transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:top-0 peer-focus:text-xs ${
+                className={`pointer-events-none absolute start-2.5 top-0 -translate-y-1/2 bg-clip p-2 rounded-full text-xs  transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:top-0 peer-focus:text-xs w-28 text-center ${
                   themesWithWhiteText.includes(theme)
                     ? "text-white"
                     : "text-gray-700"
@@ -40,11 +74,12 @@ export default function Contact() {
               <input
                 type="text"
                 id="nom"
-                className="p-4 placeholder-transparent bg-transparent border-none peer focus:border-transparent focus:outline-none focus:rinplaceholder-gray-50 "
+                className="w-full p-4 placeholder-transparent bg-transparent border-none peer focus:border-transparent focus:outline-none focus:rinplaceholder-gray-50 rounded-xl"
                 placeholder="nom"
+                {...register("nom", { required: true })}
               />
               <span
-                className={`pointer-events-none absolute start-2.5 top-0 -translate-y-1/2 bg-clip p-2 rounded-full text-xs  transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:top-0 peer-focus:text-xs ${
+                className={`pointer-events-none absolute start-2.5 top-0 -translate-y-1/2 bg-clip p-2 rounded-full text-xs  transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:top-0 peer-focus:text-xs w-28 text-center  ${
                   themesWithWhiteText.includes(theme)
                     ? "text-white"
                     : "text-gray-700"
@@ -62,11 +97,12 @@ export default function Contact() {
             <input
               type="text"
               id="email"
-              className="p-4 placeholder-transparent bg-transparent border-none peer focus:border-transparent focus:outline-none focus:rinplaceholder-gray-50 "
+              className="w-full p-4 placeholder-transparent bg-transparent border-none peer focus:border-transparent focus:outline-none focus:rinplaceholder-gray-50 rounded-xl"
               placeholder="email"
+              {...register("email", { required: true })}
             />
             <span
-              className={`pointer-events-none absolute start-2.5 top-0 -translate-y-1/2 bg-clip p-2 rounded-full text-xs  transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:top-0 peer-focus:text-xs ${
+              className={`pointer-events-none absolute start-2.5 top-0 -translate-y-1/2 bg-clip p-2 rounded-full text-xs  transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:top-0 peer-focus:text-xs w-28 text-center  ${
                 themesWithWhiteText.includes(theme)
                   ? "text-white"
                   : "text-gray-700"
@@ -86,10 +122,14 @@ export default function Contact() {
               className="w-full p-4 placeholder-transparent bg-transparent border-none peer focus:border-transparent focus:outline-none focus:rinplaceholder-gray-50"
               rows="10"
               placeholder="message"
+              {...register("message", { required: true })}
             />
             <span
-              className={`pointer-events-none absolute start-2.5 top-0 -translate-y-1/2 bg-clip p-2 rounded-full text-xs transition-all peer-placeholder-shown:top-[30px] peer-placeholder-shown:text-sm peer-focus:top-0 peer-focus:text-xs  
-  ${themesWithWhiteText.includes(theme) ? "text-white" : "text-gray-700"}`}
+              className={`pointer-events-none absolute start-2.5 top-0 -translate-y-1/2 bg-clip p-2 rounded-full text-xs transition-all peer-placeholder-shown:top-[30px] peer-placeholder-shown:text-sm peer-focus:top-0 peer-focus:text-xs  w-28 text-center  ${
+                themesWithWhiteText.includes(theme)
+                  ? "text-white"
+                  : "text-gray-700"
+              }`}
             >
               <b>Message</b>
             </span>
@@ -105,6 +145,12 @@ export default function Contact() {
             <h4 className={`w-full`}>Envoyer</h4>
           </button>
         </form>
+      </div>
+      <div className="my-5 text-4xl text-center">
+        Formulaire en cours de dévelopement
+        <br />
+        Vous pourvez me contacter à :
+        <a mailto="contact@ducompagnon.fr"> <u><b>contact@ducompagnon.fr</b></u></a>
       </div>
     </div>
   );

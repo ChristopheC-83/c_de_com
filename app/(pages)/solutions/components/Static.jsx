@@ -6,9 +6,9 @@
 
 
 return (
-    <div>
 
-static page
+    <div className={`container`} id="static"> 
+Static
 
     </div>
 

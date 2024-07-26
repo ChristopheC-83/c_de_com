@@ -6,9 +6,9 @@
 
 
 return (
-    <div>
-<h4 className={`text-clip`}>dynamic page</h4>
+    <div className={`container`} id="dynamic"> 
 
+dynamic
 
     </div>
 
