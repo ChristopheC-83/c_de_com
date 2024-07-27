@@ -15,7 +15,7 @@ export default function Static() {
   }
 
   return (
-    <div className={`container`} id="static">
+    <div className={`container`} >
       <div className={`w-fit mx-auto`}>
         <h1 className={`text-clip w-fit mx-auto my-10`}>Un site statique ?</h1>
         

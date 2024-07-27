@@ -21,7 +21,7 @@ export default function Solutions() {
         <Dynamic />
       </div>
       {/* solution préconçue  */}
-      <div className="min-h-96" id="wordpress">
+      <div className="w-full min-h-96" id="wordpress">
         <WordPress />
       </div>
     </div>

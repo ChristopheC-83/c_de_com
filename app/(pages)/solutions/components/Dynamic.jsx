@@ -17,7 +17,7 @@ import Frame from "./Frame";
   }
 
 return (
-  <div className={`container`} id="dynamic">
+  <div className={`container`} >
   <div className={`w-fit mx-auto`}>
     <h1 className={`text-clip w-fit mx-auto my-10`}>Un site dynamique ?</h1>
     

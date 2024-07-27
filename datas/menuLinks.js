@@ -16,7 +16,7 @@ export const menuLinks = [
       },
       {
         title: "Un site dynamique",
-        href: "/solutions#global",
+        href: "/solutions#dynamic",
       },
       {
         title: "Conception autonome / Site préfabriqué",
