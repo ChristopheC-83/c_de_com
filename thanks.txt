@@ -10,6 +10,19 @@ https://unsplash.com/fr/@enginakyurt
 image sécurité
 https://unsplash.com/fr/@mr_williams_photography
 
+image merch
+https://unsplash.com/fr/@smckinn
+
+image personnes
+https://unsplash.com/fr/@wocintechchat
+
+imaage dashboard
+https://unsplash.com/fr/@goumbik
+
+image billets
+https://unsplash.com/fr/@sharonmccutcheon
+  
+
 
 icone pc
 <a href="https://www.flaticon.com/fr/icones-gratuites/linformatique" title="l'informatique icônes">L'informatique icônes créées par Soremba - Flaticon</a>
@@ -21,3 +34,7 @@ icone vitesse
 <a href="https://www.flaticon.com/fr/icones-gratuites/la-vitesse" title="la vitesse icônes">La vitesse icônes créées par Freepik - Flaticon</a>
 icone bouclier
 <a href="https://www.flaticon.com/fr/icones-gratuites/securite" title="sécurité icônes">Sécurité icônes créées par Freepik - Flaticon</a>
+icone creation
+<a href="https://www.flaticon.com/fr/icones-gratuites/creation" title="création icônes">Création icônes créées par surang - Flaticon</a>
+icone différences
+<a href="https://www.flaticon.com/fr/icones-gratuites/difference" title="différence icônes">Différence icônes créées par noomtah - Flaticon</a>
