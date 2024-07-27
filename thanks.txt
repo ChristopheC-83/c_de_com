@@ -4,7 +4,20 @@ https://unsplash.com/fr/@dengxiangs
 image price 
 https://unsplash.com/fr/@allisonsaeng
 
+image talent
+https://unsplash.com/fr/@enginakyurt
+
+image sécurité
+https://unsplash.com/fr/@mr_williams_photography
+
+
 icone pc
 <a href="https://www.flaticon.com/fr/icones-gratuites/linformatique" title="l'informatique icônes">L'informatique icônes créées par Soremba - Flaticon</a>
 icone pc outils
 <a href="https://www.flaticon.com/fr/icones-gratuites/maintenance" title="maintenance icônes">Maintenance icônes créées par Prosymbols Premium - Flaticon</a>
+icone talent.png
+<a href="https://www.flaticon.com/fr/icones-gratuites/talent" title="talent icônes">Talent icônes créées par Parzival’ 1997 - Flaticon</a>
+icone vitesse
+<a href="https://www.flaticon.com/fr/icones-gratuites/la-vitesse" title="la vitesse icônes">La vitesse icônes créées par Freepik - Flaticon</a>
+icone bouclier
+<a href="https://www.flaticon.com/fr/icones-gratuites/securite" title="sécurité icônes">Sécurité icônes créées par Freepik - Flaticon</a>
