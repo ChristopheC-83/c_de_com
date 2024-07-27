@@ -38,6 +38,13 @@ export const statInternet = [
   },
   {
     id: 50,
+    qtt: "10 sec",
+    text: "pour convaincre de rester et visiter votre site !",
+    explain:
+      "C'est en un laps de temps aussi court que nous devons dire à notre visiteur : <br> ' Reste sur ce site, nous avons ce que tu cherches !!! ' <br>et le faire avec élégance, simplicité et efficacité. <br> Votre site internet doit être votre meilleur commercial, votre meilleur VRP. <br> Faites appel à un professionnel pour qu'il vous accompagne dans la conception de votre site internet.",
+  },
+  {
+    id: 60,
     qtt: "2 min 17",
     text: "de temps moyen passé sur un site internet.",
     explain:
