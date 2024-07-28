@@ -34,6 +34,10 @@ export const menuLinks = [
         title: "Votre site en quelques étapes",
         href: "/sequences",
       },
+      {
+        title: "FAQ et Garanties",
+        href: "/sequences#faq",
+      },
     ],
   },
   {

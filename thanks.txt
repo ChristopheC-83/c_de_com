@@ -21,7 +21,19 @@ https://unsplash.com/fr/@goumbik
 
 image billets
 https://unsplash.com/fr/@sharonmccutcheon
-  
+
+image decouverte
+https://unsplash.com/fr/@dariuszsankowski
+
+image contrat
+https://unsplash.com/fr/@kellysikkema
+
+image developpement
+https://unsplash.com/fr/@euwars
+
+image reussite
+https://unsplash.com/fr/@guillealvarez
+
 
 
 icone pc
@@ -40,3 +52,12 @@ icone différences
 <a href="https://www.flaticon.com/fr/icones-gratuites/difference" title="différence icônes">Différence icônes créées par noomtah - Flaticon</a>
 icone sac pieces
 <a href="https://www.flaticon.com/fr/icones-gratuites/euro" title="euro icônes">Euro icônes créées par Iconpro86 - Flaticon</a>
+icone choix 
+<a href="https://www.flaticon.com/fr/icones-gratuites/incertitude" title="incertitude icônes">Incertitude icônes créées par Freepik - Flaticon</a>
+incone contrat
+<a href="https://www.flaticon.com/fr/icones-gratuites/contrat" title="contrat icônes">Contrat icônes créées par Freepik - Flaticon</a>
+icone decouverte
+<a href="https://www.flaticon.com/fr/icones-gratuites/developpement" title="développement icônes">Développement icônes créées par IconBaandar - Flaticon</a>
+icone victoire
+<a href="https://www.flaticon.com/fr/icones-gratuites/la-victoire" title="la victoire icônes">La victoire icônes créées par Freepik - Flaticon</a>
+
