@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function Frame({ solution, index, modulo }) {
+export default function Frame({ item, index, modulo }) {
   return (
     <div
       className={`flex max-md:flex-col my-16 md:my-24 max-md:gap-y-16
@@ -30,8 +30,8 @@ export default function Frame({ solution, index, modulo }) {
                 right-0`}
         >
           <Image
-            src={solution.illustration}
-            alt={solution.title}
+            src={item.illustration}
+            alt={item.title}
             fill
             className={`absolute object-cover inset-0`}
           />
@@ -44,18 +44,18 @@ export default function Frame({ solution, index, modulo }) {
             <div className="absolute top-0 overflow-hidden rounded-full shadow-lg customBorder size-16 bg-clip-opacity -translate-y-[33%] left-0 -translate-x-[33%]">
               <div className="posMid aspect-square w-[90%] customBorder rounded-full bg-neutral-50 ">
                 <Image
-                  src={solution.icon}
-                  alt={solution.title}
+                  src={item.icon}
+                  alt={item.title}
                   fill
                   className={`absolute  object-cover scale-[0.65] top-[-10px] filterShadow`}
                 />
               </div>
             </div>
-            <h3>{solution.title}</h3>
+            <h3>{item.title}</h3>
           </div>
           <p
             dangerouslySetInnerHTML={{
-              __html: solution.text,
+              __html: item.text,
             }}
             className={`pl-3 md:pl-6 mt-4`}
           ></p>

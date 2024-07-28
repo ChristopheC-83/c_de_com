@@ -4,3 +4,5 @@ ou petit text sous les input...?
 
 
 formulaire de contact à rendre fonctionnel
+
+commenter tous les composants et fichiers

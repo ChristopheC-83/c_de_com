@@ -32,7 +32,7 @@ export const menuLinks = [
     links: [
       {
         title: "Votre site en quelques étapes",
-        href: "/sequences_menu",
+        href: "/sequences",
       },
     ],
   },

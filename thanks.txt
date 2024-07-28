@@ -38,3 +38,5 @@ icone creation
 <a href="https://www.flaticon.com/fr/icones-gratuites/creation" title="création icônes">Création icônes créées par surang - Flaticon</a>
 icone différences
 <a href="https://www.flaticon.com/fr/icones-gratuites/difference" title="différence icônes">Différence icônes créées par noomtah - Flaticon</a>
+icone sac pieces
+<a href="https://www.flaticon.com/fr/icones-gratuites/euro" title="euro icônes">Euro icônes créées par Iconpro86 - Flaticon</a>

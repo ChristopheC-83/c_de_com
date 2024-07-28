@@ -8,8 +8,8 @@ export default function Global() {
 
   return (
     <div className={`container`}>
-      {solutions_global.map((solution, index) => (
-        <Frame key={index} solution={solution} index={index} modulo={modulo} />
+      {solutions_global.map((item, index) => (
+        <Frame key={index} item={item} index={index} modulo={modulo} />
       ))}
     </div>
   );

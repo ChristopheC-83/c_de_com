@@ -19,11 +19,11 @@ export default function WordPress() {
           Comprenez qu'avec une formation, vous pourrez faire votre site
           vous-même ! <br />
           WordPress est un caisse de pièces de Lego. <br />
-          <b>Avantage : </b> relativement facile à prendre en main, autonomie.
+          <b>Avantages : </b> relativement facile à prendre en main, autonomie après une formation (en ligne bien souvent).
           <br />
           <b>Inconvénients : </b> les pièces fonctionnelles sont souvent
           payantes, mise à jour régulière, <br />
-          complexes à personnaliser comme on le souhaiterait.
+          complexes à personnaliser comme on le souhaiterait. Temps pour se former + temps pour mettre en place le site.
         </p>
         <br />
         <h4>Les sites faits avec Wix et autres :</h4>
@@ -36,8 +36,8 @@ export default function WordPress() {
 
         <h4 className={`text-center`}>
           Finalement, toujours la même question et les mêmes dilemnes... <br />
-          d'un coté de la balance : l'argent, <br />
-          de l'autre : le temps et l'énergie ! <br />
+          d'un coté de la balance : <b><u>l' argent</u></b>, <br />
+          de l'autre : <b><u>le temps et l'énergie !</u></b> <br />
         </h4>
       </div>
     </div>

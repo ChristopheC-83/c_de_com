@@ -22,8 +22,8 @@ return (
     <h1 className={`text-clip w-fit mx-auto my-10`}>Un site dynamique ?</h1>
     
   </div>
-  {solutions_dynamic.map((solution, index) => (
-    <Frame key={index} solution={solution} index={index} modulo={modulo}/>
+  {solutions_dynamic.map((item, index) => (
+    <Frame key={index} item={item} index={index} modulo={modulo}/>
   ))}
 </div>
 

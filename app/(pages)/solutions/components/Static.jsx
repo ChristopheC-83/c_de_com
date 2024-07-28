@@ -20,8 +20,8 @@ export default function Static() {
         <h1 className={`text-clip w-fit mx-auto my-10`}>Un site statique ?</h1>
         
       </div>
-      {solutions_static.map((solution, index) => (
-        <Frame key={index} solution={solution} index={index} modulo={modulo}/>
+      {solutions_static.map((item, index) => (
+        <Frame key={index} item={item} index={index} modulo={modulo}/>
       ))}
     </div>
   );
