@@ -10,7 +10,7 @@ export const compareItems = [
     dynamic: "/images/price/oui.png",
   },
   {
-    critere: "Site adaptable <br/>  <small>pc et smartphone</small>",
+    critere: "Site responsive/adaptable <br/>  <small>pc et smartphone</small>",
     static: "/images/price/oui.png",
     dynamic: "/images/price/oui.png",
   },
@@ -35,7 +35,7 @@ export const compareItems = [
     dynamic: "/images/price/oui.png",
   },
   {
-    critere: "système de connexion <br/> <small>gestion des utilisateurs</small>",
+    critere: "système de connexion <br/> <small> + gestion des utilisateurs</small>",
     static: "/images/price/non.png",
     dynamic: "/images/price/oui.png",
   },
