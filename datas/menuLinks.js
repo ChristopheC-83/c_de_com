@@ -48,15 +48,15 @@ export const menuLinks = [
     links: [
       {
         title: "Menu des tarifs",
-        href: "/prices_menu",
+        href: "/prices",
       },
       {
         title: "Pour un site statique",
-        href: "/price_static",
+        href: "/price#static",
       },
       {
         title: "Pour un site dynamique",
-        href: "/price_dynamic",
+        href: "/price#dynamic",
       },
     ],
   },

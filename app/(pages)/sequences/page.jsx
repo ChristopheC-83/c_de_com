@@ -9,7 +9,7 @@ export default function Sequences() {
       </h1>
       <h2 className={`text-clip w-fit mx-auto`}>Voyons ça ensemble !</h2>
       <Steps />
-      <h1 className={`text-clip w-fit mx-auto  mt-8 md:mt-12`}>
+      <h1 className={`text-clip w-fit mx-auto  mt-8 md:mt-12`} id="faq">
         FAQ et Garanties
       </h1>
       <Faq />

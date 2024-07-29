@@ -23,7 +23,7 @@ export const solutions_static = [
     {
       id: 40,
       title: "Le prix",
-      text: "Il ne doit pas vous faire choisir entre un site statique et un site dynamique. Vos besoins réels sont à prendre en compte en tout premier lieu, mais sachez que le site statique est souvent moins cher à l'achat. <br/> Les coûts de maintenance sont également moins élevés.",
+      text: "Il ne doit pas vous faire choisir entre un site statique et un site dynamique. Vos besoins réels sont à prendre en compte en tout premier lieu, mais sachez que le site statique est souvent moins cher à l'achat. <br/>Nous compterons 3 à 5 pages en général.<br/> Les coûts de maintenance sont également moins élevés.",
       icon: "/images/solutions/icons/price.png",
       illustration: "/images/solutions/illustrations/argent.jpg",
     },

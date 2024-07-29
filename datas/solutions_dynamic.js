@@ -23,7 +23,7 @@ export const solutions_dynamic = [
     {
       id: 40,
       title: "Le prix",
-      text: "Plus de travail, plus de temps, plus de fonctionnalités... un site dynamique est plus cher à l'achat. <br/> Mais il est aussi plus rentable, plus efficace, plus évolutif, plus adapté à vos besoins et à ceux de vos clients et propects. <br/> Il est un investissement sur le long terme.",
+      text: "Plus de travail, plus de temps, plus de fonctionnalités... un site dynamique est plus cher à l'achat. <br/> Mais il est aussi plus rentable, plus efficace, plus évolutif, plus adapté à vos besoins et à ceux de vos clients et propects. <br/>Le nombre de pages est difficilement définissable.<br/> Il est un investissement sur le long terme.",
       icon: "/images/solutions/icons/sac_pieces.png",
       illustration: "/images/solutions/illustrations/billets.jpg",
     },
