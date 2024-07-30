@@ -21,7 +21,7 @@ export default function Frame({ item, index, modulo }) {
              ${index % 2 === modulo ? "left-[7.5%]" : "left-[2.5%]"}
              top-[10%] rounded-xl customBorder customShadow  w-[90%] aspect-[3/2] opacity-50 bg-clip-opacity`}
         >
-          <div className="absolute top-[5%] left-[3%] w-[94%] h-[90%] bg-neutral-100 rounded-xl customBorder bottomShadowL"></div>
+          <div className="absolute top-[5%] left-[3%] w-[94%] h-[90%] bg-neutral-100 rounded-xl customBorder bottomShadowL "></div>
         </div>
         {/* image */}
         <div

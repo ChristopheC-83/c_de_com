@@ -146,11 +146,13 @@ export default function Contact() {
           </button>
         </form>
       </div>
-      <div className="my-5 text-4xl text-center">
-        Formulaire en cours de dévelopement
+      <div className="my-8 text-3xl text-center">
+        Formulaire en cours de développement
         <br />
-        Vous pourvez me contacter à :
-        <a mailto="contact@ducompagnon.fr"> <u><b>contact@ducompagnon.fr</b></u></a>
+        Vous pouvez me contacter à :
+        <a mailto="contact@ducompagnon.fr"> <u><b>contact@ducompagnon.fr</b></u></a><br />
+        
+        ou par téléphone au : <a href="tel:0699812296" > <u><b>06.99.81.22.96</b></u></a>
       </div>
     </div>
   );

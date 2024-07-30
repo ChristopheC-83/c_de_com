@@ -52,11 +52,11 @@ export const menuLinks = [
       },
       {
         title: "Pour un site statique",
-        href: "/prices#static",
+        href: "/prices#price_static",
       },
       {
         title: "Pour un site dynamique",
-        href: "/prices#dynamic",
+        href: "/prices#price_dynamic",
       },
       {
         title: (<>Petit arrangement <br/> entre amis...</>),

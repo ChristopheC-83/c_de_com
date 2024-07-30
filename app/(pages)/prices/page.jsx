@@ -12,14 +12,18 @@ export default function Prices() {
       {/* Les conditions d'un tarif */}
 
       <Intro />
-    <Compare />
-    
-    <h2 className={`text-clip mt-10 mb-6 w-fit mx-auto`}>En détail :</h2>
+      <Compare />
+
+      <h2 className={`text-clip mt-10 mb-6 w-fit mx-auto`}>En détail :</h2>
       {/* tarif pour un site statique */}
-      <StaticPrice />
+      <div id="price_static">
+        <StaticPrice />
+      </div>
 
       {/* tarif pour un site dynamique */}
-      <DynamicPrice />
+      <div id="price_dynamic">
+        <DynamicPrice />
+      </div>
       {/* Arrangement */}
       <Freelance />
 

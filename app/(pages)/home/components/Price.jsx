@@ -29,7 +29,7 @@ export default function Price() {
         <p><u><b>À noter :</b></u><br /> je ne propose que des sites <b>"faits main"</b> ! <br /> <b>Pas de sites préconçus</b> de type WordPress ou équivalent.  <br />Chaque couleur, bordure, cadre, arrondi... pourra être modifié à volonté pour un <b>rendu unique</b> !</p>
 
         <Link
-          href="/"
+          href="/contact"
           className="p-4 mx-auto mt-3 mb-5 text-white duration-200 rounded-full shadow-lg bg-clip hover:opacity-80 w-fit"
         >
           <h4 className={`w-fit`}>
@@ -42,7 +42,7 @@ export default function Price() {
         </p>
         <p>
           Comptez environ <b>1200€ HT</b> pour un{" "}
-          <Link href="/price_static">
+          <Link href="/prices#price_static">
             <b>
               <u>site statique</u>
             </b>
@@ -54,13 +54,13 @@ export default function Price() {
         <br />
         <p>
           Pour un{" "}
-          <Link href="/price_dynamic">
+          <Link href="/prices#price_dynamic">
             <u>
               <b>site dynamique</b>
             </u>
           </Link>
           , administrable, ou couplé à un second site d'adminitration, comptez
-          environ <b>3000€ HT</b>. <br />
+          environ <b>2500€ HT</b>. <br />
           Là, vous pourrez gérer vos contenus, vos produits, vos clients, vos
           collaborateurs et leurs droits.
         </p>
@@ -76,7 +76,7 @@ export default function Price() {
           prestation réalisée.
         </h5>
         <Link
-          href="/"
+          href="/prices"
           className="p-4 mx-auto mt-3 mb-5 text-white duration-200 rounded-full shadow-lg bg-clip hover:opacity-80 w-fit"
         >
           <h4 className={`w-fit`}>

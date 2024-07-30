@@ -37,9 +37,28 @@ export default function MenuMobile() {
           <SheetTitle>Une Question ?</SheetTitle>
         </SheetHeader>
         <div className="flex flex-col items-start justify-between mt-10 gap-y-8">
+          <div className="flex justify-between px-5 w-[80%] mx-auto">
+            <Link href="/">
+              <h5
+                className={`px-4 py-0.5 text-white rounded-full bg-clip hover:opacity-80 duration-200`}
+              >
+                Accueil
+              </h5>
+            </Link>
+            <Link href="/contact">
+              <h5
+                className={`px-4 py-0.5 text-white rounded-full bg-clip hover:opacity-80 duration-200`}
+              >
+                Contact
+              </h5>
+            </Link>
+          </div>
           {/* Menu ici */}
-          <NavigationMenu className="max-xs:-translate-x-7">
-            <NavigationMenuList data-orientation="horizontal" className="max-xs:scale-[0.9] ">
+          <NavigationMenu className="mb-8 ml-[4vw] xs:ml-[10vw] midflex max-xs:-translate-x-7">
+            <NavigationMenuList
+              data-orientation="vertical"
+              className="max-xs:scale-[0.9] flex justify-between mx-auto"
+            >
               {/* Les Déroulants */}
               {menuLinks.map((menuLink, index) => (
                 <NavigationMenuItem key={index}>
@@ -77,15 +96,7 @@ export default function MenuMobile() {
             </NavigationMenuList>
           </NavigationMenu>
           {/* Les liens directs */}
-          
         </div>
-        <SheetFooter>
-          <SheetClose asChild>
-            <Button variant="danger" className="mt-10">
-              Fermer
-            </Button>
-          </SheetClose>
-        </SheetFooter>
       </SheetContent>
     </Sheet>
   );

@@ -26,9 +26,9 @@ export const needsItems = [
       },
     ],
     description:
-      "<b>Vous souhaitez montrer votre savoir faire, vos compétences ?</b> <br><br> Vous êtes un freelance, indépendant ou artisan ?<br>Vous voulez promouvoir un évènement ponctuel ? <br><br> Même si vous montez en compétences avec l'acquisition d'expériences, votre site n'a pas besoin d'évoluer en permanence. <br><br>Des mises à jour peuvent parfois être nécessaires, mais elles sont ponctuelles.<br><br><b><u>Un site statique</u> est une solution adaptée à vos besoins.</b>",
+      "<b>Vous souhaitez montrer votre savoir faire, vos compétences ?</b> <br><br> Vous êtes un freelance, indépendant ou artisan ?<br>Vous voulez promouvoir un évènement ponctuel ? <br><br> Même si vous montez en compétences avec l'acquisition d'expériences,<b> votre site n'a pas besoin d'évoluer en permanence.</b> <br><br>Des mises à jour peuvent parfois être nécessaires, mais elles sont ponctuelles.<br><br><b><u>Un site statique</u> est une solution adaptée à vos besoins.</b>",
     text_btn: "En savoir plus",
-    href: "/#solution_static",
+    href: "/solutions#static",
   },
   {
     id: 2,
@@ -50,8 +50,8 @@ export const needsItems = [
       },
     ],
     description:
-      "<b>Vous travaillez en équipe et/ou avez besoin de communiquer sur vos projets, vos nouveautés ?</b><br><br> Vos êtes créateur (contenu, artiste...), artiste ou commerçant ? Vous avez besoin d'interactivité ? Votre proposition commerciale évolue fréquemment ? <br><br>Votre site a besoin d'être alimenté et mis à jour régulièrement. Il pourrait même être complété par un collaborateur avec des droits spécifiques.<br><br> <b><u>Un site dynamique</u> ou un site couplé à une administration serait adapté à vos besoins.</b>",
+      "<b>Vous travaillez en équipe et/ou avez besoin de communiquer sur vos projets, vos nouveautés ?</b><br><br> Vos êtes créateur (contenu, artiste...), artiste ou commerçant ? Vous avez besoin d'interactivité ? <b>Votre proposition commerciale évolue fréquemment ?</b> <br><br>Votre site a besoin d'être alimenté et mis à jour régulièrement. Il pourrait même être complété par un collaborateur avec des droits spécifiques.<br><br> <b><u>Un site dynamique</u> ou un site couplé à une administration serait adapté à vos besoins.</b>",
     text_btn: "En savoir plus",
-    href: "/#solution_dynamic",
+    href: "/solutions#dynamic",
   },
 ];

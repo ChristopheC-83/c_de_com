@@ -6,3 +6,7 @@ ou petit text sous les input...?
 formulaire de contact à rendre fonctionnel
 
 commenter tous les composants et fichiers
+
+faire 'Ils nous ont fait confiance" en bas d'accueil
+
+mettre lien vers videos youtube

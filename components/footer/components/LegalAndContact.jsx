@@ -15,10 +15,16 @@ export default function LegalAndContact() {
       <Link href="mailto:contact@ducompagnon.fr">
         <h5>contact@ducompagnon.fr</h5>
       </Link>
+      <a href="tel:0699812296" > <b>06.99.81.22.96</b></a>
 
       <h5 className="mt-12">
         2024 &copy; Christophe Chiappetta - Tous droits réservés
       </h5>
+      <Link href="/legal">
+        <h5 className="">
+          Mentions Légales
+        </h5>
+      </Link>
     </div>
   );
 }
