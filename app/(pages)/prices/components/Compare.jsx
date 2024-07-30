@@ -85,7 +85,9 @@ export default function Compare() {
         <h5 className={`w-fit text-clip mx-auto pb-1 pt-0`}>Légende</h5>
         <div className="flex">
           {legend.map((item, index) => (
-            <div className="flex-col w-1/3 flexMid" key={index}>
+            <div className={`flex-col w-1/3 flexMid
+            ${item.label==="non" ? "border-x-2" : ""}
+            `} key={index}>
               <Image
                 src={item.image}
                 alt={item.label}

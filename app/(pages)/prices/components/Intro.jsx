@@ -6,7 +6,7 @@ export default function Intro() {
         className={`flex flex-col justify-between p-2 customBorder customShadow rounded-xl xs:p-3 md:p-4 max-md:w-full bg-clip-opacity-white mx-auto gap-y-3 my-8 md:my-12`}
       >
         <h4 className={`textShadowClip text-center my-4`}>
-          Vous avez déterminé ce dont vous aviez besoin ?
+          Vous avez déterminé ce dont vous avez besoin ?
         </h4>
         <p>Si non, contactez moi ! On va mettre tout ça au clair.</p>
         <p>Si oui, continuons ensemble !</p>

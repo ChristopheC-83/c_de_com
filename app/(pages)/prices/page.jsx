@@ -3,6 +3,7 @@ import Conclusion from "./components/Conclusion";
 import DynamicPrice from "./components/Dynamic";
 import StaticPrice from "./components/Static";
 import Compare from "./components/Compare";
+import Freelance from "./components/Freelance";
 
 export default function Prices() {
   return (
@@ -19,6 +20,8 @@ export default function Prices() {
 
       {/* tarif pour un site dynamique */}
       <DynamicPrice />
+      {/* Arrangement */}
+      <Freelance />
 
       {/*  A prendre en compte */}
       <Conclusion />

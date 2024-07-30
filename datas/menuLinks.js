@@ -19,7 +19,7 @@ export const menuLinks = [
         href: "/solutions#dynamic",
       },
       {
-        title: "Conception autonome / Site préfabriqué",
+        title: (<>Conception autonome <br/> et Sites préfabriqués</>),
         href: "/solutions#wordpress",
       },
     ],
@@ -52,11 +52,15 @@ export const menuLinks = [
       },
       {
         title: "Pour un site statique",
-        href: "/price#static",
+        href: "/prices#static",
       },
       {
         title: "Pour un site dynamique",
-        href: "/price#dynamic",
+        href: "/prices#dynamic",
+      },
+      {
+        title: (<>Petit arrangement <br/> entre amis...</>),
+        href: "/prices#arrangement",
       },
     ],
   },

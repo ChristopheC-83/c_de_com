@@ -1,9 +1,9 @@
 export const compareItems = [
-//   {
-//     critere: "critere",
-//     static: "static",
-//     dynamic: "dynamic",
-//   },
+  //   {
+  //     critere: "critere",
+  //     static: "static",
+  //     dynamic: "dynamic",
+  //   },
   {
     critere: "Création sur mesure <br/> <small>codage spécifique</small>",
     static: "/images/price/oui.png",
@@ -15,7 +15,8 @@ export const compareItems = [
     dynamic: "/images/price/oui.png",
   },
   {
-    critere: "3 pages obligatoires <br/> <small>accueil, mentions légales <br/> à propos</small>",
+    critere:
+      "3 pages obligatoires <br/> <small>accueil, mentions légales <br/> à propos</small>",
     static: "/images/price/oui.png",
     dynamic: "/images/price/oui.png",
   },
@@ -25,7 +26,8 @@ export const compareItems = [
     dynamic: "/images/price/oui.png",
   },
   {
-    critere: "métadonnées spécifiques<br/> par page <br/> <small>pour référencement google</small>",
+    critere:
+      "métadonnées spécifiques<br/> par page <br/> <small>pour référencement google</small>",
     static: "/images/price/oui.png",
     dynamic: "/images/price/oui.png",
   },
@@ -35,7 +37,18 @@ export const compareItems = [
     dynamic: "/images/price/oui.png",
   },
   {
-    critere: "système de connexion <br/> <small> + gestion des utilisateurs</small>",
+    critere: "Notice d'utilisation<br/><small>si besoin</small>",
+    static: "/images/price/oui.png",
+    dynamic: "/images/price/oui.png",
+  },
+  {
+    critere: "video / accompagnement<br/><small>si besoin</small>",
+    static: "/images/price/oui.png",
+    dynamic: "/images/price/oui.png",
+  },
+  {
+    critere:
+      "système de connexion <br/> <small> + gestion des utilisateurs</small>",
     static: "/images/price/non.png",
     dynamic: "/images/price/oui.png",
   },
@@ -59,16 +72,7 @@ export const compareItems = [
     static: "/images/price/non.png",
     dynamic: "/images/price/option.png",
   },
-  {
-    critere: "Notice d'utilisation<br/><small>si besoin</small>",
-    static: "/images/price/oui.png",
-    dynamic: "/images/price/oui.png",
-  },
-  {
-    critere: "video / accompagnement<br/><small>si besoin</small>",
-    static: "/images/price/oui.png",
-    dynamic: "/images/price/oui.png",
-  },
+
   {
     critere: "Achat de nom de domaine<br/><small></small>",
     static: "/images/price/option.png",
@@ -80,7 +84,8 @@ export const compareItems = [
     dynamic: "/images/price/option.png",
   },
   {
-    critere: "Hébergement<br/><small>static -> Vercel <br/> dynamic -> Hostinger</small>",
+    critere:
+      "Hébergement<br/><small>static -> Vercel <br/> dynamic -> Hostinger</small>",
     static: "/images/price/option.png",
     dynamic: "/images/price/option.png",
   },
