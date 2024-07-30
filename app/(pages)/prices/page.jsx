@@ -14,7 +14,7 @@ export default function Prices() {
       <Intro />
       <Compare />
 
-      <h2 className={`text-clip mt-10 mb-6 w-fit mx-auto`}>En détail :</h2>
+      <h2 className={`text-clip mt-10 mb-6 w-fit mx-auto`}>Plus précisément :</h2>
       {/* tarif pour un site statique */}
       <div id="price_static">
         <StaticPrice />

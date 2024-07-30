@@ -8,23 +8,26 @@ export default function Conclusion() {
       >
         <h2 className={`text-clip w-fit mx-auto md:mt-6`}>Pour conclure...</h2>
         <p>
-          Je me doute bien que tout ne peut pas être clair, <br /> surtout dans
-          votre situation qui est unique !
+          Je me doute bien que <b>tout ne peut pas être clair</b>, <br /> surtout dans
+          <b>votre situation qui est unique</b> !
         </p>
         <p>
           Même si j'ai essayé de donner un maximum d'informations sans être trop
           long ou lourd, vous avez encore des questions.... <br />
           Et c'est bien normal !
         </p>
-        <p>N'hésitez pas ! Contactez moi !</p>
+        <p><b>N'hésitez pas ! Contactez moi !</b> <br />
+        <small>J'arrête de mettre le bouton/lien... ça fait trop là, non ? 😅</small></p>
         <p>
           Un petit mail ou même une discussion par téléphone pourra vous
-          permettre d'y voir plus clair.
+          permettre d'<b>y voir plus clair</b>.
         </p>
         <p>
           Je suis là pour vous accompagner du début à la fin. <br />
-          J'ai presque envie de dire : d'être votre partenaire avant même le
-          début et jusqu'à après la fin !
+          J'ai presque envie de dire : d<b>
+            'être votre partenaire avant même le
+            début et jusqu'à après la fin
+          </b>!
         </p>
       </div>
     </div>

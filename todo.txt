@@ -10,3 +10,5 @@ commenter tous les composants et fichiers
 faire 'Ils nous ont fait confiance" en bas d'accueil
 
 mettre lien vers videos youtube
+
+metadatas

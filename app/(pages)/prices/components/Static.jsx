@@ -7,13 +7,13 @@ export default function StaticPrice() {
       >
         <h3 className="mx-auto w-fit text-clip">Site Statique</h3>
         <p>
-          Il sera donc plus ou moins figé. <br />
+          <b>Il sera donc plus ou moins figé.</b> <br />
           Chaque modification devra être le fruit de quelqu'un qui mettra les
           mains dans le code ! <br />
           Mais l'objectif d'un tel site n'est pas d'évoluer fréquemment !
         </p>
         <p>
-          Pendant 1 mois, je m'engage à : <br />
+          <b>Pendant 1 mois, je m'engage à :</b> <br />
           - Corriger des bugs qui seraient apparus (ou qui m'auraient échappé 🫣)
           <br />
           - Modifier des éléments qui ne vous conviendraient pas (dans le texte
@@ -21,10 +21,10 @@ export default function StaticPrice() {
           <br />
         </p>
         <p>
-          Par la suite, si vous avez des besoins d'évolution, dès le règlement
-          complet de votre facture, le code vous appartient ! Libre à vous de
+          Par la suite, <b>si vous avez des besoins d'évolution</b>, dès le règlement
+          complet de votre facture, le code vous appartient ! <br />Libre à vous de
           faire des modifications ou de les faire faire ! <br />
-          Pour ma part, je reste disponible pour des prestations
+          Pour ma part,<b> je reste disponible</b> pour des prestations
           complémentaires. <br />
           Vous m'avais confiance pour la création de votre site, vous pouvez me
           faire confiance pour son évolution et ma retenue quant à la
@@ -47,11 +47,11 @@ export default function StaticPrice() {
           référencement) <br />
           <br />
         </h5>
-        <h4>
+        <h4  className={`text-center`}>
           <u>Nous partons, dans ce cas, sur une base de 1200€ HT.</u>
         </h4>
-        <h5>
-          La gestion du nom de domaine, de l'hébergement et du déploiement
+        <h5 className={`text-center my-4`}>
+          La gestion du nom de domaine, de l'hébergement et du déploiement <br />
           peuvent se faire dans le cadre d'une prestation complémentaire.
         </h5>
       </div>

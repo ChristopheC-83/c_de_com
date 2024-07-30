@@ -14,12 +14,12 @@ export default function Freelance() {
           Au cas où vous ne le sauriez pas, je suis à mon compte... et alors ?
         </p>
         <p>
-          Et alors ? je connais vos problématiques. <br />
+          Et alors ? je connais quelques unes de vos problématiques. <br />
           Et si je ne peux pas toutes les résoudre, je peux en résoudre quelques
-          unes !
+          unes au moins !
         </p>
         <p>
-          L'amortissement !!! <br />
+          L'<b>amortissement</b> par exemple !!! <br />
           Et oui, quand on fait un investissement de plus de 500€ pour son
           entreprise, ça passe en charge sur plusieurs années. <br />
           J'ai horreur de ne pas pouvoir gérer mon budget comme je l'entends, je
@@ -28,10 +28,12 @@ export default function Freelance() {
           unique de 490€ HT et le reste sous la forme d'abonnement sur plusieurs
           mois (jusqu'à 10) à votre convenance. Chaque facture sera du fait du
           développement de la maintenance de votre site. <br />
-          Dès que le site est prêt, il est déployé. <br />
+          <b>Dès que le site est prêt, il est déployé immédiatement.</b> <br />
           Dès le paiement complété, au bout de l' "abonnement", le code vous
           appartient.
         </p>
+        <br /><br />
+        <p className={`mb-2`}>A l'opposé, si vous souhaitez <b>préserver votre trésorerie</b> et ne pas payer le site en une seule fois, le système d'abonnement vous permettra d'<b>étaler le règlement</b> de ma prestation en 3 ou 4 fois sans frais. Les modalités seront à déterminer ensemble pour être correctes et justes pour tout le monde. <br />Comme d'habitude, tout est dans l'échange et la discussion ! </p>
       </div>
     </div>
   );

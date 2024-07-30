@@ -19,7 +19,7 @@ export default function Compare() {
 
   return (
     <div className="container">
-      <h2 className={`text-clip mt-10 mb-6 w-fit mx-auto`}>En bref :</h2>
+      <h2 className={`text-clip mt-10 mb-6 w-fit mx-auto`}>Quelques détails :</h2>
       <div
         className={`w-full max-w-[600px] flex flex-col customBorder customShadow rounded-xl  mt-8 md:mt-12 mx-auto text-center`}
       >

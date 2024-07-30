@@ -9,7 +9,7 @@ export default function DynamicPrice() {
         <h3 className="mx-auto w-fit text-clip">Site Dynamique</h3>
 
         <p>
-          La tarification d'un tel projet peut être plus complexe.
+          <b>La tarification exacte d'un tel projet peut être plus complexe.</b>
           <br />
           Il dépendra de vos besoins, de vos envies, de vos contraintes, de vos
           objectifs...
@@ -30,7 +30,7 @@ export default function DynamicPrice() {
           photos/carroussel/animations sobres) <br />
           - dans ces 3 pages, possibilité de gérer des articles... <br />
           ce qui peut créer un grand nombre de pages (mais c'est vous qui les
-          feraient... facilement 😉 !) <br />
+          feraient... facilement en plus 😉 !) <br />
           - 1 page de mentions légales <br />
           - 1 page "à propos" de présentation
           <br />- inclusion de vos photos ou de photos d'illustration libres de
@@ -41,11 +41,11 @@ export default function DynamicPrice() {
           <br />
           <br />
         </h5>
-        <h4>
+        <h4  className={`text-center`}>
           <u>Nous partons, ici, sur une base de 2500€ HT</u>
         </h4>
-        <h5>
-          La gestion du nom de domaine, de l'hébergement et du déploiement
+        <h5 className={`text-center my-4`}>
+          La gestion du nom de domaine, de l'hébergement et du déploiement <br />
           peuvent se faire dans le cadre d'une prestation complémentaire.
         </h5>
       </div>
