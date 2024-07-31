@@ -16,12 +16,12 @@ export default function About() {
   useEffect(() => {
     // Fonction pour calculer le temps écoulé en années
     const calculateTime = () => {
-      const startDate = new Date('2021-09-01');
+      const startDate = new Date("2021-09-01");
       const now = new Date();
       const diff = now - startDate; // Différence en millisecondes
 
       const years = diff / (1000 * 60 * 60 * 24 * 365.25); // Conversion en années
-      setTime(years+0.5);
+      setTime(years + 0.5);
     };
 
     // Calcul initial
@@ -69,15 +69,18 @@ export default function About() {
             <p>(essentiellement menuisier d'agencement / poseur de cuisine)</p>
             <br />
             <p>et évidemment un peu d'informatique ! </p>
-            <Link href="https://parcours.ducompagnon.fr/certif" target="_blank" >
-              <h4>{arrow} {time.toFixed(0)} ans de formations de développeur web, d'attestations, de diplômes, de projets...</h4>
+            <Link href="https://parcours.ducompagnon.fr/certif" target="_blank">
+              <h4>
+                {arrow} {time.toFixed(0)} ans de formations de développeur web,
+                d'attestations, de diplômes, de projets...
+              </h4>
             </Link>
             <p>Je n'arrive pas les mains vides quand même !</p>
             <br />
             <h4 className={`text-center`}>
-              Voilà donc ma proposition !  Pas que de la tech !<br />
-              Mais également une vue commerciale <br /> et un savoir-être au service
-              des clients.
+              Voilà donc ma proposition ! Pas que de la tech !<br />
+              Mais également une vue commerciale <br /> et un savoir-être au
+              service des clients.
             </h4>
           </div>
 
@@ -89,10 +92,8 @@ export default function About() {
               informatique.
             </p>
             <p>
-              Comme le nom de ce site le suggère, <b>
-                je suis là pour vous
-                accompagner dans votre projet.
-              </b>
+              Comme le nom de ce site le suggère,{" "}
+              <b>je suis là pour vous accompagner dans votre projet.</b>
             </p>
             <br />
             <p>
@@ -102,10 +103,8 @@ export default function About() {
             </p>
             <p>
               Etre votre <b>associé pour créer cette vitrine</b>, cet outil qui
-              montrera à tous vos clients potentiels ce que vous proposez,<br /> <b>
-                ce
-                dont vous êtes capables.
-              </b>
+              montrera à tous vos clients potentiels ce que vous proposez,
+              <br /> <b>ce dont vous êtes capables.</b>
             </p>
             <br />
             <p>
@@ -115,7 +114,10 @@ export default function About() {
             </p>
             <p>Bien évidemment, vous aurez le dernier mot!</p>
             <br />
-            <h4 className={`text-center`}>Pour un site qui vous ressemble car vous aurez participé à sa création !</h4>
+            <h4 className={`text-center`}>
+              Pour un site qui vous ressemble car vous aurez participé à sa
+              création !
+            </h4>
           </div>
         </div>
 
@@ -143,29 +145,29 @@ export default function About() {
         <h4>J'ai même mieux !</h4>
         <br />
         <p>
-          Si vous êtes dans ma zone (Ales / Arles / Monpellier / Remoulin), <b>
-            je
-            me ferai un plaisir de passer vous voir !
-          </b>
+          Si vous êtes dans ma zone (Ales / Arles / Monpellier / Remoulin),{" "}
+          <b>je me ferai un plaisir de passer vous voir !</b>
         </p>
         <p>
-          Nous souhaitons une <b>communication digitale</b>... OUI, mais au profit des
+          Nous souhaitons une <b>communication digitale</b>... OUI, mais au
+          profit des
           <b> relations humaines !</b>
         </p>
         <br />
-        <p><b>Le déplacement sera facturé à hauteur de : 1 café !</b></p>
+        <p>
+          <b>Le déplacement sera facturé à hauteur de : 1 café !</b>
+        </p>
         <p>Le temps de dégrossir votre projet et faire connaissance.</p>
         <br />
         <h4 className={`text-center`}>N'hésitez pas !</h4>
         <Link href="/contact">
-              <h4
-                className={`px-4 py-0.5 text-white rounded-full w-fit mx-auto bg-clip hover:opacity-80 duration-200 my-4`}
-              >
-                Contactez-moi !
-              </h4>
-            </Link>
+          <h4
+            className={`px-4 py-0.5 text-white rounded-full w-fit mx-auto bg-clip hover:opacity-80 duration-200 my-4`}
+          >
+            Contactez-moi !
+          </h4>
+        </Link>
       </div>
-     
     </div>
   );
 }

@@ -51,7 +51,7 @@ export default function Header() {
               animate={buttonVariants.finalState}>
           <Link href="/contact" className="max-md:hidden">
             <button className="px-4 py-0.5 text-white rounded-full bg-clip hover:opacity-80 duration-200">
-              <p className="font-semibold pb-0.5">Contact</p>
+              <p className="font-semibold">Contact</p>
             </button>
           </Link>
         </motion.div>

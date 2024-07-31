@@ -1,6 +1,5 @@
 import EarthComponent from "./components/_EarthComponent";
 import Stat from "./components/Stat";
-import StatDetails from "./components/_StatDetails";
 import Needs from "./components/Needs";
 import Price from "./components/Price";
 
