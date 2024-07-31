@@ -19,7 +19,7 @@ export default function Needs() {
             alt="christophe c."
             width={250}
             height={250}
-            className="object-cover border-2 rounded-full shadow border-ring bg-gradient-to-bl from-teal-400 to-indigo-300 customShadow aspect-square"
+            className="object-cover border-2 rounded-full shadow customBorder customShadow aspect-square"
             priority={true}
           />
         </div>

@@ -22,7 +22,8 @@ export default function StatDetails() {
       <div className="flex flex-col items-center sm:flex-row">
         <motion.div className="w-3/12 midFlex max-md:hidden" 
               initial={buttonVariants.initialStateFromLeft}
-              whileInView={buttonVariants.finalState}>
+              whileInView={buttonVariants.finalState}
+              viewport={{ once: true }}>
           <FaRegQuestionCircle className="text-8xl filterShadow text-color2 rotate-[-12deg] max-md:scale-95" />
         </motion.div>
           <p
@@ -31,7 +32,8 @@ export default function StatDetails() {
           ></p>
         <motion.div className="w-3/12 midFlex max-md:hidden"
               initial={buttonVariants.initialStateFromRight}
-              whileInView={buttonVariants.finalState}>
+              whileInView={buttonVariants.finalState}
+              viewport={{ once: true }}>
           <FaRegQuestionCircle className="text-8xl filterShadow text-color2 rotate-[25deg] max-md:scale-95" />
         </motion.div>
       </div>
