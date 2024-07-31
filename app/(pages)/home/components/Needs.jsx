@@ -1,9 +1,13 @@
 /* eslint-disable react/no-unescaped-entities */
+"use client";
+
 import { needsItems } from "@/datas/needsItems";
 import IconsUsers from "./_IconsUsers";
 import idea from "@/public/images/frames/idea.jpg";
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
+import { buttonVariants } from "@/lib/framerVariants";
 
 export default function Needs() {
   return (
@@ -29,21 +33,32 @@ export default function Needs() {
             key={item.id}
             className="flex flex-col items-center justify-between w-[49%] p-2 customBorder customShadow rounded-xl xs:p-3 md:p-4 max-md:w-full bg-clip-opacity-white "
           >
-            <div className="flex items-end justify-center w-full mb-6 gap-x-10 xs:gap-x-20 ">
+            <motion.div
+              className="flex items-end justify-center w-full mb-6 gap-x-10 xs:gap-x-20 "
+              initial={buttonVariants.initialStateFromUp}
+              whileInView={buttonVariants.finalState}
+              viewport={{ once: true }}
+            >
               {item.icons.map((icon, index) => (
                 <IconsUsers key={index} datas={icon} index={index} />
               ))}
-            </div>
+            </motion.div>
             <p
               className="mb-5"
               dangerouslySetInnerHTML={{ __html: item.description }}
             ></p>
-            <Link
-              href={item.href}
-              className="p-4 mb-3 text-white duration-200 rounded-full shadow-lg bg-clip hover:opacity-80"
+            <motion.div
+              initial={buttonVariants.initialStateFromDown}
+              whileInView={buttonVariants.finalState}
+              viewport={{ once: true }}
             >
-              <h4>{item.text_btn}</h4>
-            </Link>
+              <Link
+                href={item.href}
+                className="flex p-4 mb-3 text-white duration-200 rounded-full shadow-lg bg-clip hover:opacity-80"
+              >
+                <h4>{item.text_btn}</h4>
+              </Link>
+            </motion.div>
           </div>
         ))}
       </div>

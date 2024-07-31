@@ -1,7 +1,10 @@
+/* eslint-disable react/no-unescaped-entities */
+"use client";
 import { Separator } from "@/components/ui/separator";
 import Link from "next/link";
+import { motion } from "framer-motion";
+import { buttonVariants } from "@/lib/framerVariants";
 
-/* eslint-disable react/no-unescaped-entities */
 export default function Price() {
   return (
     <div
@@ -18,24 +21,39 @@ export default function Price() {
           <span className="text-white">😅</span>
         </h3>
         <p className="text-justify">
-          Le tarif de votre site web dépend effectivement de <b>plusieurs facteurs </b>: <br />
+          Le tarif de votre site web dépend effectivement de{" "}
+          <b>plusieurs facteurs </b>: <br />
           le nombre de pages, le type de site, les fonctionnalités, le design,
           les besoins de maintenance etc.
         </p>
         <p>
-          Au final, <b>la quantité de travail demandée</b> ! Pas plus pas moins que
-          pour n'importe quelle prestation.
+          Au final, <b>la quantité de travail demandée</b> ! Pas plus pas moins
+          que pour n'importe quelle prestation.
         </p>
-        <p><u><b>À noter :</b></u><br /> je ne propose que des sites <b>"faits main"</b> ! <br /> <b>Pas de sites préconçus</b> de type WordPress ou équivalent.  <br />Chaque couleur, bordure, cadre, arrondi... pourra être modifié à volonté pour un <b>rendu unique</b> !</p>
+        <p>
+          <u>
+            <b>À noter :</b>
+          </u>
+          <br /> je ne propose que des sites <b>"faits main"</b> ! <br />{" "}
+          <b>Pas de sites préconçus</b> de type WordPress ou équivalent. <br />
+          Chaque couleur, bordure, cadre, arrondi... pourra être modifié à
+          volonté pour un <b>rendu unique</b> !
+        </p>
 
-        <Link
-          href="/contact"
-          className="p-4 mx-auto mt-3 mb-5 text-white duration-200 rounded-full shadow-lg bg-clip hover:opacity-80 w-fit"
-        >
-          <h4 className={`w-fit`}>
-            Je vous propose un devis gratuit et sans engagement.
-          </h4>
-        </Link>
+        <motion.div 
+                  initial={buttonVariants.initialStateFromcenter}
+                  whileInView={buttonVariants.finalState}
+                  viewport={{ once: true }}
+                  >
+          <Link
+            href="/contact"
+            className="flex p-4 mx-auto mt-3 mb-5 text-white duration-200 rounded-full shadow-lg bg-clip hover:opacity-80 w-fit"
+          >
+            <h4 className={`w-fit`}>
+              Je vous propose un devis gratuit et sans engagement.
+            </h4>
+          </Link>
+        </motion.div>
         <Separator />
         <p>
           <b>Pour débrousailler le sujet : </b>
@@ -75,14 +93,18 @@ export default function Price() {
           ressemble. <br /> Le prix devra savoir se faire oublier une fois la
           prestation réalisée.
         </h5>
+        <motion.div 
+                  initial={buttonVariants.initialStateFromcenter}
+                  whileInView={buttonVariants.finalState}
+                  viewport={{ once: true }}
+                  >
         <Link
           href="/prices"
-          className="p-4 mx-auto mt-3 mb-5 text-white duration-200 rounded-full shadow-lg bg-clip hover:opacity-80 w-fit"
+          className="flex p-4 mx-auto mt-3 mb-5 text-white duration-200 rounded-full shadow-lg bg-clip hover:opacity-80 w-fit"
         >
-          <h4 className={`w-fit`}>
-            Les tarifs en détails, c'est par ici !
-          </h4>
+          <h4 className={`w-fit`}>Les tarifs en détails, c'est par ici !</h4>
         </Link>
+        </motion.div>
       </div>
     </div>
   );
