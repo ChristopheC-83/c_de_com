@@ -27,8 +27,8 @@ export default function Header() {
                   animate="visible"
                   exit="hidden"
                   variants={gradual}
-                  transition={{ duration: 0.5, delay: i * 0.1 }}
-                  className="text-center font-display font-bold tracking-[-0.02em] drop-shadow-sm md:leading-[5rem] text-clip text-nowrap"
+                  transition={{ duration: 0.25, delay: i * 0.05 }}
+                  className="text-center font-display font-bold tracking-[-0.02em] drop-shadow-sm  text-clip text-nowrap"
                 >
                   <Link href="/">
                     {char === " " ? <span>&nbsp;</span> : char}

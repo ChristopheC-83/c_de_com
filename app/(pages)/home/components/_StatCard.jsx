@@ -3,6 +3,8 @@
 import { capitalize } from "@/helpers/capitalize";
 import { MdOutlineTouchApp } from "react-icons/md";
 import { useStatsStore } from "@/store/StatStore";
+import { motion } from "framer-motion";
+import { buttonVariants } from "@/lib/framerVariants";
 
 export default function StatCard({ stat }) {
   const { setSelectedStat } = useStatsStore();
@@ -24,12 +26,21 @@ export default function StatCard({ stat }) {
               <div
                 className={`pb-2 pl-2 text-3xl midFlex w-full h-24 bg-clip rounded-xl shadow-lg`}
               >
-                <h4 className="scale-150 text-neutral-50 ">{stat.qtt}</h4>
+                <motion.h4
+                  className="scale-150 text-neutral-50 "
+                  initial={buttonVariants.initialStateFromcenter}
+                  whileInView={buttonVariants.finalState}
+                >
+                  {stat.qtt}
+                </motion.h4>
               </div>
             </div>
-            <h4 className="p-2 mx-auto mt-6 mb-4 text-3xl rounded-full shadow-lg cursor-pointer animate-pulse bg-clip w-fit flip_hover">
+            <motion.h4 className="p-2 mx-auto mt-6 mb-4 text-3xl rounded-full shadow-lg cursor-pointer animate-pulse bg-clip w-fit flip_hover"
+                  initial={buttonVariants.initialStateFromcenter}
+                  whileInView={buttonVariants.finalState}
+                >
               <MdOutlineTouchApp className="text-white" />
-            </h4>
+            </motion.h4>
           </div>
           <p className="font-semibold ">{stat.text}</p>
         </div>

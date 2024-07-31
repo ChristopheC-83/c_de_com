@@ -1,4 +1,6 @@
+"use client";
 import { statInternet } from "@/datas/statInternet";
+import { motion } from "framer-motion";
 import {
   Carousel,
   CarouselContent,
@@ -10,9 +12,25 @@ import StatCard from "./_StatCard";
 import StatDetails from "./_StatDetails";
 import surprise from "@/public/images/frames/surprise.jpg";
 import Image from "next/image";
+import { buttonVariants } from "@/lib/framerVariants";
 
 export default function Stat() {
   // console.log(statInternet);
+
+  const words = "Le saviez-vous ?";
+  const letters = words.split("");
+
+  const pullupVariant = {
+    initial: { y: 100, opacity: 0 },
+    animate: (i) => ({
+      y: 0,
+      opacity: 1,
+      transition: {
+        delay: 0.25 + i * 0.05, // Delay each letter's animation by 0.05 seconds
+      },
+    }),
+  };
+
   return (
     <div className="container px-4 mt-0 overflow-x-hidden xs:px-6 md:px-8">
       <Carousel
@@ -24,11 +42,34 @@ export default function Stat() {
       >
         <div className="flex items-center justify-between my-6">
           <div className="gap-4 px-4 py-2 mx-auto my-3 rounded-full flexMid bg-neutral-50/50 shadow_spectre">
-            <CarouselPrevious variant="arrow" className="text-white" />
-            
-            <h2 className="pb-3 text-clip w-fit ">Le saviez-vous ?</h2>
-            
-            <CarouselNext variant="arrow" className="text-white" />
+            <motion.div
+              initial={buttonVariants.initialStateFromLeft}
+              animate={buttonVariants.finalState}
+            >
+              <CarouselPrevious variant="arrow" className="text-white" />
+            </motion.div>
+
+            <div className="flex justify-center pb-2">
+              {letters.map((letter, i) => (
+                <motion.h2
+                  key={i}
+                  variants={pullupVariant}
+                  initial="initial"
+                  animate="animate"
+                  custom={i}
+                  className="text-center font-display text-clip font-bold tracking-[-0.02em]  "
+                >
+                  {letter === " " ? <span>&nbsp;</span> : letter}
+                </motion.h2>
+              ))}
+            </div>
+
+            <motion.div
+              initial={buttonVariants.initialStateFromRight}
+              animate={buttonVariants.finalState}
+            >
+              <CarouselNext variant="arrow" className="text-white" />
+            </motion.div>
           </div>
         </div>
         <CarouselContent>

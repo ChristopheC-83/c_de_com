@@ -3,6 +3,8 @@
 import { statInternet } from "@/datas/statInternet";
 import { useStatsStore } from "@/store/StatStore";
 import { FaRegQuestionCircle } from "react-icons/fa";
+import {motion} from "framer-motion";
+import { buttonVariants } from "@/lib/framerVariants";
 
 export default function StatDetails() {
   const { selectedStat } = useStatsStore();
@@ -18,16 +20,20 @@ export default function StatDetails() {
         <h5>{stat.text}</h5>
       </div>
       <div className="flex flex-col items-center sm:flex-row">
-        <div className="w-3/12 midFlex max-md:hidden">
+        <motion.div className="w-3/12 midFlex max-md:hidden" 
+              initial={buttonVariants.initialStateFromLeft}
+              whileInView={buttonVariants.finalState}>
           <FaRegQuestionCircle className="text-8xl filterShadow text-color2 rotate-[-12deg] max-md:scale-95" />
-        </div>
-        <p
-          className="w-full mx-auto mb-2 md:w-6/12"
-          dangerouslySetInnerHTML={{ __html: stat.explain }}
-        ></p>
-        <div className="w-3/12 midFlex max-md:hidden">
+        </motion.div>
+          <p
+            className="w-full mx-auto mb-2 md:w-6/12"
+            dangerouslySetInnerHTML={{ __html: stat.explain }}
+          ></p>
+        <motion.div className="w-3/12 midFlex max-md:hidden"
+              initial={buttonVariants.initialStateFromRight}
+              whileInView={buttonVariants.finalState}>
           <FaRegQuestionCircle className="text-8xl filterShadow text-color2 rotate-[25deg] max-md:scale-95" />
-        </div>
+        </motion.div>
       </div>
     </div>
   );
