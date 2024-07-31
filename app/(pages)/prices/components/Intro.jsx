@@ -1,10 +1,18 @@
+"use client";
 import Link from "next/link";
+import { motion } from "framer-motion";
+import { frameVariants } from "@/lib/framerVariants";
 
 /* eslint-disable react/no-unescaped-entities */
 export default function Intro() {
   return (
     <div className="container ">
-      <div
+      <motion.div
+        id="price_static"
+        initial={frameVariants.initialState}
+        whileInView={frameVariants.finalState}
+        viewport={{ once: true }}
+      
         className={`flex flex-col justify-between p-2 customBorder customShadow rounded-xl xs:p-3 md:p-4 max-md:w-full bg-clip-opacity-white mx-auto gap-y-3 my-8 md:my-12`}
       >
         <h4 className={`textShadowClip text-center my-6`}>
@@ -26,7 +34,7 @@ export default function Intro() {
           de développement que pour un site dynamique.
         </p>
         <p>Voyons pourquoi !</p>
-      </div>
+      </motion.div>
     </div>
   );
 }

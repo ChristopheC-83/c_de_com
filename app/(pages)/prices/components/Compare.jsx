@@ -1,5 +1,8 @@
+"use client";
 import { compareItems } from "@/datas/compareItems";
 import Image from "next/image";
+import { motion } from "framer-motion";
+import { frameVariants } from "@/lib/framerVariants";
 
 export default function Compare() {
   const legend = [
@@ -19,8 +22,13 @@ export default function Compare() {
 
   return (
     <div className="container">
-      <h2 className={`text-clip mt-10 mb-6 w-fit mx-auto`}>Quelques détails :</h2>
-      <div
+      <h2 className={`text-clip mt-10 mb-6 w-fit mx-auto`}>
+        Quelques détails :
+      </h2>
+      <motion.div
+        initial={frameVariants.initialState}
+        whileInView={frameVariants.finalState}
+        viewport={{ once: true }}
         className={`w-full max-w-[600px] flex flex-col customBorder customShadow rounded-xl  mt-8 md:mt-12 mx-auto text-center`}
       >
         <div className={`flexMid w-full border-b-2 border-neutral-200 py-3`}>
@@ -78,16 +86,19 @@ export default function Compare() {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
       <div
         className={`w-full max-w-[200px] flex  customBorder customShadow rounded-xl  my-2 md:my-3 mx-auto text-center pt-1 pb-1 flex-col`}
       >
         <h5 className={`w-fit text-clip mx-auto pb-1 pt-0`}>Légende</h5>
         <div className="flex">
           {legend.map((item, index) => (
-            <div className={`flex-col w-1/3 flexMid
-            ${item.label==="non" ? "border-x-2" : ""}
-            `} key={index}>
+            <div
+              className={`flex-col w-1/3 flexMid
+            ${item.label === "non" ? "border-x-2" : ""}
+            `}
+              key={index}
+            >
               <Image
                 src={item.image}
                 alt={item.label}

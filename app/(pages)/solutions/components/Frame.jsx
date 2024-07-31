@@ -1,4 +1,7 @@
+"use client";
 import Image from "next/image";
+import { motion } from "framer-motion";
+import { buttonVariants, imgVariants } from "@/lib/framerVariants";
 
 export default function Frame({ item, index, modulo }) {
   return (
@@ -10,10 +13,17 @@ export default function Frame({ item, index, modulo }) {
       key={index}
     >
       {/* cadre + image */}
-      <div
+      <motion.div
         className={`relative flex flex-col md:w-1/2  min-w-[250px] min-h-[166px] aspect-[5/3]
            max-md:${index % 2 === modulo ? "translate-x-8" : " "}
           `}
+        initial={
+          index % 2 === modulo
+            ? imgVariants.initialStateFromRight
+            : imgVariants.initialStateFromLeft
+        }
+        whileInView={imgVariants.finalState}
+        viewport={{ once: true }}
       >
         {/* cadre */}
         <div
@@ -36,21 +46,31 @@ export default function Frame({ item, index, modulo }) {
             className={`absolute object-cover inset-0`}
           />
         </div>
-      </div>
+      </motion.div>
       {/* partie texte */}
-      <div className="flex flex-col w-1/2 max-md:w-full">
+      <motion.div
+        className="flex flex-col w-1/2 max-md:w-full"
+        initial={
+          index % 2 === modulo
+            ? imgVariants.initialStateFromLeft
+            : imgVariants.initialStateFromRight
+        }
+        whileInView={imgVariants.finalState}
+        viewport={{ once: true }}
+      >
         <div className="flex flex-col">
           <div className="relative py-4 pl-12 ml-2 md:ml-6 rounded-xl customBorder customShadow ">
-            <div className="absolute top-0 overflow-hidden rounded-full shadow-lg customBorder size-16 bg-clip-opacity -translate-y-[33%] left-0 -translate-x-[33%]">
-              <div className="posMid aspect-square w-[90%] customBorder rounded-full bg-neutral-50 ">
-                <Image
-                  src={item.icon}
-                  alt={item.title}
-                  fill
-                  className={`absolute  object-cover scale-[0.65] top-[-10px] filterShadow`}
-                />
+            
+              <div className="absolute top-0 overflow-hidden rounded-full shadow-lg customBorder size-16 bg-clip-opacity -translate-y-[33%] left-0 -translate-x-[33%]">
+                <div className="posMid aspect-square w-[90%] customBorder rounded-full bg-neutral-50 ">
+                  <Image
+                    src={item.icon}
+                    alt={item.title}
+                    fill
+                    className={`absolute  object-cover scale-[0.65] top-[-10px] filterShadow`}
+                  />
+                </div>
               </div>
-            </div>
             <h3>{item.title}</h3>
           </div>
           <p
@@ -60,7 +80,7 @@ export default function Frame({ item, index, modulo }) {
             className={`pl-3 md:pl-6 mt-4`}
           ></p>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }
