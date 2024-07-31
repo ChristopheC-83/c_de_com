@@ -1,4 +1,8 @@
+
+"use client";
+
 import { cn } from "@/lib/utils";
+import { motion } from "framer-motion";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -11,15 +15,23 @@ import {
 import Link from "next/link";
 import { menuLinks } from "@/datas/menuLinks";
 import ListItem from "./ListItem";
+import { linksMenuVariants } from "@/lib/framerVariants";
 
 export default function MenuScreen() {
+
+
+
+
   return (
     
       <NavigationMenu>
         <NavigationMenuList>
           {/* Les Déroulants */}
           {menuLinks.map((menuLink, index) => (
-            <NavigationMenuItem key={index}>
+          <motion.div key={index} 
+          initial={linksMenuVariants.initialState}
+          animate={linksMenuVariants.finalState}>
+            <NavigationMenuItem >
               <NavigationMenuTrigger>
                 <h4>{menuLink.menu}</h4>
               </NavigationMenuTrigger>
@@ -52,6 +64,7 @@ export default function MenuScreen() {
                 </ul>
               </NavigationMenuContent>
             </NavigationMenuItem>
+          </motion.div>
           ))}
         </NavigationMenuList>
       </NavigationMenu>
