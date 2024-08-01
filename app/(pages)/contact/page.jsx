@@ -2,10 +2,8 @@
 
 /* eslint-disable react/no-unescaped-entities */
 "use client";
-import { useEffect } from "react";
 import useThemeStore from "@/store/ThemeStore";
 import { useForm } from "react-hook-form";
-import { toast } from "sonner";
 
 export default function Contact() {
   const { theme } = useThemeStore();
@@ -18,22 +16,8 @@ export default function Contact() {
     watch,
   } = useForm();
 
-  useEffect(() => {
-    if (errors.prenom) {
-      toast.error("Le prénom est requis");
-    }
-    if (errors.nom) {
-      toast.error("Le nom est requis");
-    }
-    if (errors.email) {
-      toast.error("L'email est requis");
-    }
-    if (errors.message) {
-      toast.error("Le message est requis");
-    }
-  }, [errors]);
 
-  function onSubmitHandler(data) {
+  async function onSubmitHandler(data) {
     console.log(data);
   }
 
@@ -43,6 +27,11 @@ export default function Contact() {
 
       <div className="flex flex-col w-full h-auto mt-8 p-1.5 xs:p-2 sm:p-3 md:p-4 customShadow rounded-xl customBorder gap-4 bg-gradient-to-tr from-neutral-200 to-neutral-100 ">
         <form onSubmit={handleSubmit(onSubmitHandler)}>
+          <input
+            type="hidden"
+            {...register("emailRecep", { required: true })}
+            value="kiketdule@gmail.com"
+          />
           <div className="flex w-full max-md:flex-col md:gap-x-4">
             {/* prénom */}
             <label
@@ -150,9 +139,20 @@ export default function Contact() {
         Formulaire en cours de développement
         <br />
         Vous pouvez me contacter à :
-        <a mailto="contact@ducompagnon.fr"> <u><b>contact@ducompagnon.fr</b></u></a><br />
-        
-        ou par téléphone au : <a href="tel:0699812296" > <u><b>06.99.81.22.96</b></u></a>
+        <a mailto="contact@ducompagnon.fr">
+          {" "}
+          <u>
+            <b>contact@ducompagnon.fr</b>
+          </u>
+        </a>
+        <br />
+        ou par téléphone au :{" "}
+        <a href="tel:0699812296">
+          {" "}
+          <u>
+            <b>06.99.81.22.96</b>
+          </u>
+        </a>
       </div>
     </div>
   );
