@@ -1,0 +1,52 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider     = "mysql"
+  url          = env("DATABASE_URL")
+  relationMode = "prisma"
+}
+
+model Message {
+  id          Int      @id @default(autoincrement())
+  email_recep String?  @db.VarChar(255)
+  email       String?  @db.VarChar(255)
+  prenom      String?  @db.VarChar(255)
+  nom         String?  @db.VarChar(255)
+  message     String?  @db.LongText
+  created_at  DateTime? @db.Timestamp(0) @default(now()) // Mis à jour pour prendre en compte la valeur par défaut
+  emis        Boolean? @default(false)
+
+  @@map("messages")
+}
+
+model doctrine_migration_versions {
+  version        String    @id
+  executed_at    DateTime? @db.DateTime(0)
+  execution_time Int?
+}
+
+/// This model or at least one of its fields has comments in the database, and requires an additional setup for migrations: Read more: https://pris.ly/d/database-comments
+model messenger_messages {
+  id           BigInt    @id @default(autoincrement())
+  body         String    @db.LongText
+  headers      String    @db.LongText
+  queue_name   String    @db.VarChar(190)
+  created_at   DateTime  @db.DateTime(0)
+  available_at DateTime  @db.DateTime(0)
+  delivered_at DateTime? @db.DateTime(0)
+
+  @@index([delivered_at], map: "IDX_75EA56E016BA31DB")
+  @@index([available_at], map: "IDX_75EA56E0E3BD61CE")
+  @@index([queue_name], map: "IDX_75EA56E0FB7336F0")
+}
+
+/// The underlying table does not contain a valid unique identifier and can therefore currently not be handled by Prisma Client.
+model table_test {
+  id   Int
+  nom  String @db.VarChar(250)
+  truc String @db.VarChar(250)
+
+  @@ignore
+}

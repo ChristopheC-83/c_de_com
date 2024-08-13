@@ -3,10 +3,14 @@
 /* eslint-disable react/no-unescaped-entities */
 "use client";
 import useThemeStore from "@/store/ThemeStore";
+import axios from "axios";
+import { useRouter } from "next/navigation";
 import { useForm } from "react-hook-form";
+import { toast } from "sonner";
 
 export default function Contact() {
   const { theme } = useThemeStore();
+  const router = useRouter();
   const themesWithWhiteText = ["dark", "gray", "deep"];
 
   const {
@@ -16,9 +20,27 @@ export default function Contact() {
     watch,
   } = useForm();
 
-
   async function onSubmitHandler(data) {
-    console.log(data);
+    // console.log(data);
+    data.emis = false;
+    try {
+      const response = await axios.post("/api/messages", data, {
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+      if (response.status === 200) {
+        // L'avis a été envoyé avec succès
+        console.log("ok ?");
+        router.push("/");
+        toast.success("Votre message a bien été envoyé !");
+      } else {
+        // Erreur inattendue lors de l'envoi de l'avis
+        throw new Error("Erreur lors de l'envoi de l'avis !!!");
+      }
+    } catch (error) {
+      console.log(error);
+    }
   }
 
   return (
@@ -29,9 +51,19 @@ export default function Contact() {
         <form onSubmit={handleSubmit(onSubmitHandler)}>
           <input
             type="hidden"
-            {...register("emailRecep", { required: true })}
+            {...register("email_recep", { required: true })}
             value="kiketdule@gmail.com"
           />
+          {/* <input
+            type="hidden"
+            {...register("emis", { required: true })}
+            value="false"
+          /> */}
+          {/* <input
+            type="hidden"
+            {...register("created_at", { required: true })}
+            value={new Date().toISOString()}
+          /> */}
           <div className="flex w-full max-md:flex-col md:gap-x-4">
             {/* prénom */}
             <label
