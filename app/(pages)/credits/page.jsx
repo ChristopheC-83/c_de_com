@@ -187,7 +187,7 @@ export default function Credits() {
           Incertitude icônes créées par Freepik - Flaticon
         </a>
         <br /><br />
-        incone contrat
+        icone contrat
         <br />
         <a
           href="https://www.flaticon.com/fr/icones-gratuites/contrat"
