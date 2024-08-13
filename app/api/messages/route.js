@@ -5,7 +5,7 @@ import { NextResponse } from "next/server";
 export const POST = async (req, res) => {
   const body = await req.json();
   let { email_recep, email, prenom, nom, message, emis } = body;
-  console.log("body", body);
+  // console.log("body", body);
 
 
   const created_at = new Date();
@@ -24,7 +24,7 @@ export const POST = async (req, res) => {
         emis,
       },
     });
-    console.log("newOpinion", newMessage);
+    // console.log("newOpinion", newMessage);
     return NextResponse.json(newMessage, { status: 200 });
   } catch (error) {
     console.log(error);
