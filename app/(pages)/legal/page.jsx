@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 
-import {thxPictures} from "@/datas/thx"
+import { thxPictures } from "@/datas/thx";
 
 export default function Legal() {
   return (
@@ -48,20 +48,7 @@ export default function Legal() {
       <br />
       <br /> Rédigé sur http://legalplace.fr
       <br />
-      <br />
-      <h4 className={`my-8`}>Remerciements</h4>{" "}
-      <p>
-        Les images d'illustrations proviennent du site{" "}
-        <a href="http://unsplash.com" target="_blank" className="text-blue-500">Unplash</a>
-      </p>
-      <p>Les images utilisées sont de :</p>
-      {thxPictures.map((item, index) => (
-        <div key={index}>
-          <p>{item.txt} ▶ <a href={item.link} target="_blank" rel="noopener noreferrer" className="text-blue-500">ICI</a></p>
-        </div>
-        
-      ))}
-     
+      
     </div>
   );
 }
