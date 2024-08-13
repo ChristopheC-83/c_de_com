@@ -5,6 +5,7 @@
 import useThemeStore from "@/store/ThemeStore";
 import axios from "axios";
 import { useRouter } from "next/navigation";
+import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { toast } from "sonner";
 
@@ -12,6 +13,8 @@ export default function Contact() {
   const { theme } = useThemeStore();
   const router = useRouter();
   const themesWithWhiteText = ["dark", "gray", "deep"];
+
+  const [btnBlocked, setBtnBlocked ]= useState(false);
 
   const {
     register,
@@ -22,6 +25,7 @@ export default function Contact() {
 
   async function onSubmitHandler(data) {
     // console.log(data);
+    setBtnBlocked(true);
     data.emis = false;
     try {
       const response = await axios.post("/api/messages", data, {
@@ -40,6 +44,11 @@ export default function Contact() {
       }
     } catch (error) {
       console.log(error);
+    } finally {
+      // Réactive le bouton après 3 secondes
+      setTimeout(() => {
+        setBtnBlocked(false);
+      }, 3000);
     }
   }
 
@@ -162,8 +171,9 @@ export default function Contact() {
                 ? "text-white"
                 : "text-gray-700"
             }`}
+            disabled={btnBlocked}
           >
-            <h4 className={`w-full`}>Envoyer</h4>
+            <h4 className={`w-full `}>Envoyer</h4>
           </button>
         </form>
       </div>
