@@ -32,7 +32,7 @@ export default function Contactez_moi() {
       });
 
       if (response.status === 200) {
-        toast.success("Vous avez reçu un email !");
+        toast.success("Vous avez reçu un email ! (regardez dans vos spams !)");
         router.push("/");
       } else {
         throw new Error("Erreur lors de l'envoi du message de réponse");

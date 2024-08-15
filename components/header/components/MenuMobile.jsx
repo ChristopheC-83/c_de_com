@@ -1,5 +1,6 @@
 import { GiHamburgerMenu } from "react-icons/gi";
 
+import * as SheetPrimitive from "@radix-ui/react-dialog";
 import {
   Sheet,
   SheetClose,
@@ -29,7 +30,7 @@ export default function MenuMobile() {
     <Sheet>
       <SheetTrigger asChild className="">
         <div className="z-50 p-2 rounded-full bg-foreground text-background w-fit">
-          <GiHamburgerMenu className="scale-[1.5]" />
+          <GiHamburgerMenu className="scale-[1.5] text-neutral-600" />
         </div>
       </SheetTrigger>
       <SheetContent side="top" className="p-2 bg-neutral-100">
@@ -38,20 +39,25 @@ export default function MenuMobile() {
         </SheetHeader>
         <div className="flex flex-col items-start justify-between mt-10 gap-y-8">
           <div className="flex justify-between px-5 w-[80%] mx-auto">
-            <Link href="/">
-              <h5
-                className={`px-4 py-0.5 text-white rounded-full bg-clip hover:opacity-80 duration-200`}
-              >
-                Accueil
-              </h5>
-            </Link>
-            <Link href="/contact">
-              <h5
-                className={`px-4 py-0.5 text-white rounded-full bg-clip hover:opacity-80 duration-200`}
-              >
-                Contact
-              </h5>
-            </Link>
+            <SheetPrimitive.Close asChild>
+              <Link href="/">
+                <h5
+                  className={`px-4 py-0.5 text-white rounded-full bg-clip hover:opacity-80 duration-200`}
+                >
+                  Accueil
+                </h5>
+              </Link>
+            </SheetPrimitive.Close>
+
+            <SheetPrimitive.Close asChild>
+              <Link href="/contactez_moi">
+                <h5
+                  className={`px-4 py-0.5 text-white rounded-full bg-clip hover:opacity-80 duration-200`}
+                >
+                  Contact
+                </h5>
+              </Link>
+            </SheetPrimitive.Close>
           </div>
           {/* Menu ici */}
           <NavigationMenu className="mb-8 ml-[4vw] xs:ml-[10vw] midflex max-xs:-translate-x-7">
@@ -84,9 +90,11 @@ export default function MenuMobile() {
                       </li>
                       {menuLink.links.map((link, idx) => (
                         <Link key={idx} href={link.href}>
-                          <p>
-                            <u>{link.title}</u>
-                          </p>
+                          <SheetPrimitive.Close asChild>
+                            <p>
+                              <u>{link.title}</u>
+                            </p>
+                          </SheetPrimitive.Close>
                         </Link>
                       ))}
                     </ul>
