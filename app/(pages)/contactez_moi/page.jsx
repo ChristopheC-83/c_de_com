@@ -21,9 +21,34 @@ export default function Contactez_moi() {
   
   
 
+  async function responseMail(data) {
+    
+    console.log("data response : ", data);
+    try {
+      const response = await axios.post("/api/response_mail", data, {
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+
+      if (response.status === 200) {
+        toast.success("Vous avez reçu un email !");
+        router.push("/");
+      } else {
+        throw new Error("Erreur lors de l'envoi du message de réponse");
+      }
+    } catch (error) {
+      console.error(error);
+      toast.error("Une erreur est survenue lors de l'envoi de réponse");
+    } finally {
+      setTimeout(() => setBtnBlocked(false), 3000);
+    }
+  }
+
+  
   async function onSubmitHandler(data) {
     setBtnBlocked(true);
-    console.log("data : ", data);
+    // console.log("data : ", data);
     try {
       const response = await axios.post("/api/send_mail", data, {
         headers: {
@@ -33,17 +58,14 @@ export default function Contactez_moi() {
 
       if (response.status === 200) {
         toast.success("Votre message a bien été envoyé !");
-        // router.push("/");
-        // fonction envoi mail de confirmation au client
+        responseMail(data)
       } else {
         throw new Error("Erreur lors de l'envoi du message");
       }
     } catch (error) {
       console.error(error);
       toast.error("Une erreur est survenue lors de l'envoi");
-    } finally {
-      setTimeout(() => setBtnBlocked(false), 3000);
-    }
+    } 
   }
 
   return (
