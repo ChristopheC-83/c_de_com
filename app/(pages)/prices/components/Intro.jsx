@@ -19,7 +19,7 @@ export default function Intro() {
           </h4>
           <div className="flex flex-col items-center w-full mb-4 md:w-fit">
             <p>Si non, on va mettre tout ça au clair.</p>
-            <Link href="/contact">
+            <Link href="/contactez_moi">
               <h5
                 className={`px-4 py-0.5 text-white rounded-full bg-clip hover:opacity-80 duration-200 w-fit my-4`}
               >

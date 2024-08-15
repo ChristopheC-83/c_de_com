@@ -2,14 +2,14 @@ export const solutions_dynamic = [
     {
       id: 10,
       title: "Exposer vos propositions !",
-      text: "Que ce soit matériel (boutique, créations artistiques) ou immatériels (formation, articles) , vous avez besoin de montrer à vos clients ce que vous avez à leur offrir. <br/> Un site dynamique vous permettra de mettre en avant vos propositions, de les mettre à jour facilement et de les adapter à vos clients.<br/> Il est, grâce à vous, toujours à jour !.",
+      text: "Que ce soit matériel (boutique, créations artistiques) ou immatériel (formations, articles) , vous avez besoin de montrer à vos clients ce que vous avez à leur offrir. <br/> Un site dynamique vous permettra de mettre en avant vos propositions, de les mettre à jour facilement et de les adapter à vos clients.<br/> Il est, grâce à vous, toujours à jour !",
       icon: "/images/solutions/icons/creation.png",
       illustration: "/images/solutions/illustrations/merchandising.jpg",
     },
     {
       id: 20,
       title: "Adaptabilité",
-      text: "A travers sa connexion, ses droits d'accès, ses bases de données, un site dynamique est capable de s'adapter à vos clients, à vos collaborateurs. <br/> Il peut être personnalisé, proposer des contenus, des droits différents selon les profils et selon vos envies et besoins..",
+      text: "A travers sa connexion, ses droits d'accès, ses bases de données, un site dynamique est capable de s'adapter à vos clients, à vos collaborateurs. <br/> Il peut être personnalisé, proposer des contenus, des droits différents selon les profils et selon vos envies et besoins...",
       icon: "/images/solutions/icons/difference.png",
       illustration: "/images/solutions/illustrations/personnes.jpg",
     },

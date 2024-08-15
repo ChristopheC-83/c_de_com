@@ -4,7 +4,7 @@ export const sequences = [
     {
       id: 10,
       title: "La découverte",
-      text: "De quoi avezvous besoin ? <b>Le savez-vous seulement ?</b><br/>Ensemble déterminons l'outil digital qui répondra le mieux à vos besoins.<br/>Un site vitrine pour exposer vos produits? Votre savoir faire? Un site administrable pour gérer votre contenu ?<br/><b>Je vous accompagne</b> avec mon expérience pour un résultat qui vous ressemble.",
+      text: "De quoi avez-vous besoin ? <b>Le savez-vous seulement ?</b><br/>Ensemble déterminons l'outil digital qui répondra le mieux à vos besoins.<br/>Un site vitrine pour exposer vos prestations ? Votre savoir faire ? Un site administrable pour gérer votre contenu ?<br/><b>Je vous accompagne</b> avec mon expérience pour un résultat qui vous ressemble.",
       icon: "/images/solutions/icons/creation.png",
       illustration: "/images/solutions/illustrations/decouverte.jpg",
     },

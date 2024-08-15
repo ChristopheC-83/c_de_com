@@ -27,12 +27,12 @@ export const compareItems = [
   },
   {
     critere:
-      "métadonnées spécifiques<br/> par page <br/> <small>pour référencement google</small>",
+      "Métadonnées spécifiques<br/> par page <br/> <small>pour référencement google</small>",
     static: "/images/price/oui.png",
     dynamic: "/images/price/oui.png",
   },
   {
-    critere: "rajouter des pages <br/> <small>à l'infini 😅</small>",
+    critere: "Rajouter des pages <br/> <small>à l'infini 😅</small>",
     static: "/images/price/oui.png",
     dynamic: "/images/price/oui.png",
   },
@@ -42,23 +42,28 @@ export const compareItems = [
     dynamic: "/images/price/oui.png",
   },
   {
-    critere: "video / accompagnement<br/><small>si besoin</small>",
+    critere: "Video / accompagnement<br/><small>si besoin</small>",
     static: "/images/price/oui.png",
     dynamic: "/images/price/oui.png",
   },
   {
+    critere: "Formulaire de Contact",
+    static: "/images/price/option.png",
+    dynamic: "/images/price/option.png",
+  },
+  {
     critere:
-      "système de connexion <br/> <small> + gestion des utilisateurs</small>",
+      "Système de connexion <br/> <small> + gestion des utilisateurs</small>",
     static: "/images/price/non.png",
     dynamic: "/images/price/oui.png",
   },
   {
-    critere: "gestion des articles <br/> <small>produits ou blog</small>",
+    critere: "Gestion des articles <br/> <small>produits ou blog</small>",
     static: "/images/price/non.png",
     dynamic: "/images/price/oui.png",
   },
   {
-    critere: "messages / avis clients <br/> <small>privés ou public</small>",
+    critere: "Messages / Avis clients <br/> <small>privés ou public</small>",
     static: "/images/price/non.png",
     dynamic: "/images/price/option.png",
   },

@@ -35,7 +35,8 @@ export default function Freelance() {
             appartient.
           </p>
           <br />
-          <p className={`mb-2`}>Autre cas de figure, si vous souhaitez <b>préserver votre trésorerie</b> et ne pas payer le site en une seule fois, le système d'abonnement vous permettra d'<b>étaler le règlement</b> de ma prestation en 3 ou 4 fois sans frais. Les modalités seront à déterminer ensemble pour être correctes et justes pour tout le monde. <br />Comme d'habitude, tout est dans l'échange et la discussion ! </p>
+          <p className={`mb-2`}>Autre cas de figure, si vous souhaitez <b>préserver votre trésorerie</b> et ne pas payer le site en une seule fois, le système d'abonnement vous permettra d'<b>étaler le règlement</b> de ma prestation en 3 ou 4 fois sans frais. Les modalités seront à déterminer ensemble pour être correctes et justes pour tout le monde.</p>
+          <h5 class='text-center  my-4'>Comme d'habitude, tout est dans l'échange et la discussion ! </h5>
         </div>
       </div>
     </FrameSlideFromBottom>

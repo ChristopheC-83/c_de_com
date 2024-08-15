@@ -9,7 +9,7 @@ export const solutions_global = [
   {
     id: 20,
     title: "L'ergonomie",
-    text: "L'ergonomie de votre site internet est un élément clé de votre réussite. Vos visiteurs doivent naviguer facilement sur votre site. A la vue des mode de consommation de l'information, nous devons avoir une proposition adaptée aux écrans de PC mais aussi aux tablettes et smartphones.",
+    text: "L'ergonomie de votre site internet est un élément clé de votre réussite. Vos visiteurs doivent naviguer facilement sur votre site. A la vue des modes de consommation de l'information, nous devons avoir une proposition adaptée aux écrans de PC mais aussi aux tablettes et smartphones.",
     icon: "/images/solutions/icons/ergonomie.png",
     illustration: "/images/solutions/illustrations/ergonomie.jpg",
   },

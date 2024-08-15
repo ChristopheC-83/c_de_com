@@ -48,7 +48,7 @@ export default function About() {
             <p>Désolé de vous décevoir 😅 ! Sincèrement !</p>
             <br />
             <h4 className={`text-center`}>
-              Je vous propose, en toute transparence, une expérience très
+              Je vous propose, en toute transparence, <br /> une expérience très
               différente !
             </h4>
           </div>
@@ -110,9 +110,9 @@ export default function About() {
             <p>
               Lors de la construction de ce projet, je vous solliciterai, vous
               montrerai les avancées, corrigerai (dans la limite du raisonnable
-              😉), vous ferai des proposition.
+              😉), vous ferai des propositions et resterai à votre écoute.
             </p>
-            <p>Bien évidemment, vous aurez le dernier mot!</p>
+            <p>Bien évidemment, vous aurez le dernier mot !</p>
             <br />
             <h4 className={`text-center`}>
               Pour un site qui vous ressemble car vous aurez participé à sa
@@ -149,7 +149,7 @@ export default function About() {
           <b>je me ferai un plaisir de passer vous voir !</b>
         </p>
         <p>
-          Nous souhaitons une <b>communication digitale</b>... OUI, mais au
+          Nous souhaitons développer une <b>communication digitale</b>... OUI, mais au
           profit des
           <b> relations humaines !</b>
         </p>
@@ -160,7 +160,7 @@ export default function About() {
         <p>Le temps de dégrossir votre projet et faire connaissance.</p>
         <br />
         <h4 className={`text-center`}>N'hésitez pas !</h4>
-        <Link href="/contact">
+        <Link href="/contactez_moi">
           <h4
             className={`px-4 py-0.5 text-white rounded-full w-fit mx-auto bg-clip hover:opacity-80 duration-200 my-4`}
           >

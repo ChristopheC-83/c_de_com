@@ -25,7 +25,7 @@ export const statInternet = [
     qtt: "80 %",
     text: "des consommateurs recherchent en ligne avant de faire affaire physiquement.",
     explain:
-      "En fonction de votre business, votre site peut être statique (coaching, prestations intellectuelles comme les avocats, les notaires..) ou dynamique (vente en ligne, réservation en ligne, prise de rendez-vous en ligne).<br> Quel que soit votre business, vous n'avez besoin pas d'un site internet, vous avez besoin de <b>VOTRE site internet</b>. ",
+      "En fonction de votre business, votre site peut être statique (coaching, prestations intellectuelles comme les avocats, les notaires..) ou dynamique (vente en ligne, réservation en ligne, prise de rendez-vous en ligne).<br> Quel que soit votre business, vous n'avez pas besoin d'un site internet, vous avez besoin de <b>VOTRE site internet</b>. ",
   },
   {
     id: 40,

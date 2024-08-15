@@ -2,7 +2,7 @@ export const menuLinks = [
   {
     menu: "Solutions",
     title: "Les possibilités",
-    text: "Un site préfabriqué ?<br> une solution sur mesure ? <br> Statique ou dynamique ?<br> Des options ?  ",
+    text: "<br /> Un site préfabriqué ?<br><br />  une solution sur mesure ? <br><br />  Statique ou dynamique ?<br><br />  Des options ?  ",
     conclusion: "Regardons ensemble 4 possibilités !",
     links: [
       {
@@ -27,7 +27,7 @@ export const menuLinks = [
   {
     menu: "Déroulé",
     title: "Comment ça se passe ?",
-    text: " Pas de surprise ! <br />Vos besoins, vos envies,<br /> mon expérience,<br />mes compétences.",
+    text: " Pas de surprise ! <br />Vos besoins, vos envies,<br /> mon expérience,<br />mes compétences.<br /> Notre projet <br /><br />  <b>Votre site !</b>",
     conclusion: "VOTRE outil de communication !",
     links: [
       {
@@ -43,7 +43,7 @@ export const menuLinks = [
   {
     menu: "Tarifs",
     title: "Combien ça coûte ?",
-    text: "  Plat à la carte ou menu ?<br /> Menu complet ?<br />ou plat / dessert ?<br />A vous de choisir !",
+    text: " <br />  Plat à la carte ou menu ?<br /><br />  Menu complet ?<br />ou plat / dessert ?<br /><br /> A vous de choisir !",
     conclusion: "Débrousaillons la question !",
     links: [
       {

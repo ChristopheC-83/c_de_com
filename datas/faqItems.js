@@ -38,7 +38,7 @@ export const faqItems = [
         <b>une notice explicative</b> et je reste disponible pour vous
         accompagner le cas échéant.
         <br />
-        Pendant un mois complet, je corrige (évidemment gratuitement) les bugs
+        Pendant un mois complet, je corrige (évidemment <b>gratuitement</b>) les bugs
         éventuels qui seraient passés à travers les mailles du filet.
         <br />
       </>
@@ -52,8 +52,8 @@ export const faqItems = [
         En fonction de la demande, je vous propose un devis pour{" "}
         <b>les mises à jour</b>.
         <br />
-        Familier avec le code, le projet, la proposition sera adaptée.
-        <b>Nous ne repartons pas de zéro.</b>
+        Familier avec le code, le projet, la proposition sera adaptée. 
+        <b> Nous ne repartons pas de zéro.</b>
         <br />
       </>
     ),

@@ -46,7 +46,7 @@ export default function Price() {
                   viewport={{ once: true }}
                   >
           <Link
-            href="/contact"
+            href="/contactez_moi"
             className="flex p-4 mx-auto mt-3 mb-5 text-white duration-200 rounded-full shadow-lg bg-clip hover:opacity-80 w-fit"
           >
             <h4 className={`w-fit`}>
