@@ -90,7 +90,7 @@ export default function Compare() {
       <div
         className={`w-full max-w-[200px] flex  customBorder customShadow rounded-xl  my-2 md:my-3 mx-auto text-center pt-1 pb-1 flex-col`}
       >
-        <h5 className={`w-fit text-clip mx-auto pb-1 pt-0`}>Légende</h5>
+        <h5 className={`w-fit text-clip mx-auto pb-2 pt-1`}>Légende</h5>
         <div className="flex">
           {legend.map((item, index) => (
             <div
