@@ -5,6 +5,7 @@ import Footer from "@/components/footer/Footer";
 import ThemesProvider from "@/providers/ThemesProvider";
 import QueryProvider from "@/providers/QueryProvider";
 import { Toaster } from "sonner";
+<link rel="icon" href="/favicon.ico" sizes="any" />
 
 export const metadata = {
   title: "Compagnon de Com'",
