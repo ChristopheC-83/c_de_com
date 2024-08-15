@@ -18,9 +18,12 @@ export default function Contactez_moi() {
     handleSubmit,
     // formState: { errors },
   } = useForm();
+  
+  
 
   async function onSubmitHandler(data) {
     setBtnBlocked(true);
+    console.log("data : ", data);
     try {
       const response = await axios.post("/api/send_mail", data, {
         headers: {
@@ -31,6 +34,7 @@ export default function Contactez_moi() {
       if (response.status === 200) {
         toast.success("Votre message a bien été envoyé !");
         // router.push("/");
+        // fonction envoi mail de confirmation au client
       } else {
         throw new Error("Erreur lors de l'envoi du message");
       }
