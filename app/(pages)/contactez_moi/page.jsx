@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 "use client";
 import FrameSlideFromBottom from "@/components/commons/FrameSlideFromBottom";
 import useThemeStore from "@/store/ThemeStore";
@@ -169,7 +170,7 @@ export default function Contactez_moi() {
             </label>
 
             <button
-              className={`w-full p-4 mx-auto mt-3 mb-5 duration-200 rounded-full shadow-lg bg-clip hover:opacity-80 ${
+              className={`w-full p-4 mx-auto mt-3 mb-3 duration-200 rounded-full shadow-lg bg-clip hover:opacity-80 ${
                 themesWithWhiteText.includes(theme)
                   ? "text-white"
                   : "text-gray-700"
@@ -179,6 +180,7 @@ export default function Contactez_moi() {
               <h4 className={`w-full `}>Envoyer</h4>
             </button>
           </form>
+          <p class='text-center'><small><i>Votre adresse mail ne sera jamais conservée/diffusée mais utilisée seulement dans le cadre d'une réponse à l'un de vos messages.</i></small></p>
         </div>
 
         <div className="my-8 text-3xl text-center">
