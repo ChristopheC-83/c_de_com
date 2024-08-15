@@ -231,6 +231,38 @@ p {
   margin-left: 10px;
 }
 
+.pulse-right {
+  transform-origin: center;
+  animation: pulse-right 1.2s infinite;
+}
+
+@keyframes pulse-right {
+  0% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(15px) rotate(20deg);
+  }
+  100% {
+    transform: translateX(-5px);
+  }
+}
+.pulse-left {
+  transform-origin: center;
+  animation: pulse-left 1.2s infinite;
+}
+
+@keyframes pulse-left {
+  0% {
+    transform: translateX(10px);
+  }
+  50% {
+    transform: translateX(-10px) rotate(-20deg);
+  }
+  100% {
+    transform: translateX(10px);
+  }
+}
 .midFlex,
 .flexMid {
   display: flex;

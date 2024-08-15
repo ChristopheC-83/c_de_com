@@ -40,13 +40,13 @@ export default function Stat() {
           loop: true,
         }}
       >
-        <div className="flex items-center justify-between my-6">
+        <div className="flex items-center justify-between my-6 min-w-[300px]">
           <div className="gap-4 px-4 py-2 mx-auto my-3 rounded-full flexMid bg-neutral-50/50 shadow_spectre">
             <motion.div
               initial={buttonVariants.initialStateFromLeft}
               animate={buttonVariants.finalState}
             >
-              <CarouselPrevious variant="arrow" className="text-white" />
+              <CarouselPrevious variant="arrow" className="text-white pulse-left" />
             </motion.div>
 
             <div className="flex justify-center pb-2">
@@ -68,7 +68,7 @@ export default function Stat() {
               initial={buttonVariants.initialStateFromRight}
               animate={buttonVariants.finalState}
             >
-              <CarouselNext variant="arrow" className="text-white" />
+              <CarouselNext variant="arrow" className="text-white pulse-right" />
             </motion.div>
           </div>
         </div>
