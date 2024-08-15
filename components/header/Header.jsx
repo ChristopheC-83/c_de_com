@@ -49,7 +49,7 @@ export default function Header() {
         <motion.div 
               initial={buttonVariants.initialStateFromRight}
               animate={buttonVariants.finalState}>
-          <Link href="/contact_2" className="max-md:hidden">
+          <Link href="/contactez_moi" className="max-md:hidden">
             <button className="px-4 py-0.5 text-white rounded-full bg-clip hover:opacity-80 duration-200">
               <p className="font-semibold">Contact</p>
             </button>

@@ -18,7 +18,7 @@ const mailjetClient = mailjet.apiConnect(
 export async function POST(req) {
   try {
     // Parse the JSON body from the request
-    const { email_recep, email, prenom, nom, message } = await req.json();
+    const { email, prenom, nom, message } = await req.json();
 
     // Send email using Mailjet
     const request = mailjetClient.post("send", { version: "v3.1" }).request({
