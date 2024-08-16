@@ -5,11 +5,25 @@ import Footer from "@/components/footer/Footer";
 import ThemesProvider from "@/providers/ThemesProvider";
 import QueryProvider from "@/providers/QueryProvider";
 import { Toaster } from "sonner";
-<link rel="icon" href="/favicon.ico" sizes="any" />
+import { locale } from "yargs";
+<link rel="icon" href="/favicon.ico" sizes="any" />;
 
 export const metadata = {
-  title: "Compagnon de Com'",
-  description: "Développez votre communication avec un site web sur mesure.",
+  title: "Le Compagnon de votre Communication Web | Compagnon de Com'",
+  description:
+    "Développez votre communication avec un site web sur mesure. Site vitrine ou site modifiable ? Je serai votre Compagnon de Com' pour vous accompagner dans la création de votre communication digitale.",
+
+  // Open Graph metadata
+  openGraph: {
+    title: "Le Compagnon de votre Communication Web | Compagnon de Com'",
+    description:
+      "Développez votre communication avec un site web sur mesure. Site vitrine ou site modifiable ? Je serai votre Compagnon de Com' pour vous accompagner dans la création de votre communication digitale.",
+    url: "https://www.compagnondecom.fr/", 
+    type: "website",
+    site_name: "Compagnon de Com'",
+    locale: "fr_FR",
+    
+  },
 };
 
 export default function RootLayout({ children }) {
