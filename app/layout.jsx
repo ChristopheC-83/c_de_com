@@ -12,7 +12,7 @@ export const metadata = {
   title: "Le Compagnon de votre Communication Web | Compagnon de Com'",
   description:
     "Développez votre communication avec un site web sur mesure. Site vitrine ou site modifiable ? Je serai votre Compagnon de Com' pour vous accompagner dans la création de votre communication digitale.",
-
+    
   // Open Graph metadata
   openGraph: {
     title: "Le Compagnon de votre Communication Web | Compagnon de Com'",
@@ -29,6 +29,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="fr">
+      <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <meta name="google-site-verification" content="Dd5wfp1u1R8BFpmJSlIDbfFdXqCm5xNdXUVHGXKfaug" />
+      </head>
       <body className="flex flex-col min-h-svh bg-neutral-100">
         <QueryProvider>
           <ThemesProvider>
